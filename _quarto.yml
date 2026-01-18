@@ -22,6 +22,19 @@ website:
         contents:
           - href: "module-1-intro-r-programming.qmd"
             text: "Module 1: Introduction to R programming"
+          - href: ""
+            text: "Module 2: Data management and transformation with Tidyverse"
+          - href: ""
+            text: "Module 3: Data visualization with ggplot2"
+          - href: ""
+            text: "Module 4: Exploratory data analysis (EDA)"
+          - href: ""
+            text: "Module 5: Data analysis report with Quarto"
+          - href: ""
+            text: "Module 6: Version control with Git and Github"
+          - href: ""
+            text: "Module 7: Creating a Quarto website"
+
          
 
 format:
