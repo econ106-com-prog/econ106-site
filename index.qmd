@@ -1,7 +1,68 @@
 ---
-title: "econ106-site-local"
+title: "Econ 106: Computer programming for economics"
 ---
 
-This is a Quarto website.
+<br>
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+**Class schedule:** Monday and Thursday \| 13:00 - 14:00 <br>**Laboratory schedule:** Wednesday \| 16:00 - 19:00 <br>**Instructor:** Christopher Llones <br>**e-mail:** christopher.llones\@vsu.edu.ph <br>**Pre-requisites:** Math 13 <br>**Course credits:** 3 units <br>**Number of hours:** 2 hrs lectures and 3 hrs laboratory per week <br>
+
+------------------------------------------------------------------------
+
+### Course description
+
+Introduction to computer programming for economics using R. The course emphasizes data management, visualization, exploratory analysis, and reproducible reporting for economic research.
+
+### Course objectives
+
+-   Develop proficiency in R programming for economic applications
+-   Manage and transform datasets using the Tidyverse ecosystem.
+-   Create and customize data visualizations with ggplot2.
+-   Perform exploratory data analysis (EDA) to summarize and interpret economic data.
+-   Produce reproducible reports with Quarto integrating narrative, code, and results.
+
+### Course outline
+
++-------------------------------------------------------------+-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Topics                                                      | Lessons                                 | Description                                                                                                                                           |
++=============================================================+=========================================+=======================================================================================================================================================+
+| Module 1: Introduction to R Programming                     | 1.  Installing R and RStudio            | 1.  Learn to install and configure R and RStudio.                                                                                                     |
+|                                                             | 2.  Packages and help pages             | 2.  Understand how to install, load, and manage R packages. Explore R's built-in help system and documentation for functions and datasets.            |
+|                                                             | 3.  R objects                           | 3.  Learn about fundamental R objects including vectors, matrices, lists, and data frames. Understand how to create, manipulate, and inspect objects. |
+|                                                             | 4.  R notation                          | 4.  Develop proficiency in R's notation, including indexing, subsetting, applying functions to objects.                                               |
++-------------------------------------------------------------+-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module 2: Data management and transformation with Tidyverse | 1.  Introduction to Tidyverse           | 1.  Understand the philosophy of Tidyverse and its role in data science workflows.                                                                    |
+|                                                             | 2.  dplyr basics                        | 2.  Learn functions for filtering, selecting, mutating, summarizing, and arranging data.                                                              |
+|                                                             | 3.  Data reshaping                      | 3.  Apply pivoting and joining techniques to restructure datasets.                                                                                    |
+|                                                             | 4.  Handling missing data               | 4.  Identify, manage, and impute missing values in datasets.                                                                                          |
+|                                                             | 5.  Case studies                        |                                                                                                                                                       |
++-------------------------------------------------------------+-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module 3: Data visualization with ggplot2                   | 1.  Grammar of graphics                 | 1.  Understand the grammar of graphics and its role in structuring visualizations.                                                                    |
+|                                                             | 2.  Basic plots                         | 2.  Create histograms, bar charts, boxplots, and scatterplots.                                                                                        |
+|                                                             | 3.  Mapping aesthetics                  | 3.  Map variables to color, shapes, to enhance interpretability.                                                                                      |
+|                                                             | 4.  Geometries and faceting             | 4.  Apply geometries and faceting techniques for comparative analysis.                                                                                |
+|                                                             | 5.  Themes and export                   | 5.  Modify plot themes and export visualizations for reports and presentations.                                                                       |
++-------------------------------------------------------------+-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module 4: Exploratory data analysis (EDA)                   | 1.  Rudiments of EDA                    | 1.  Discuss EDA as the first step in data analysis.                                                                                                   |
+|                                                             | 2.  Charts and tables                   | 2.  Summarize and visualize data using tables and plots.                                                                                              |
+|                                                             | 3.  Measures of central tendency        | 3.  Compute and interpret mean, median, mode, and quantiles.                                                                                          |
+|                                                             | 4.  Dispersion and distribution         | 4.  Analyze variance, standard deviation, skewness, and kurtosis.                                                                                     |
+|                                                             | 5.  Contingency tables and scatterplots | 5.  Explore relationship between categorical variables and continuous variables.                                                                      |
+|                                                             |                                         | 6.                                                                                                                                                    |
++-------------------------------------------------------------+-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module 5: Data analysis report with Quarto                  | 1.  Introduction to Quarto              | 1.  Learn to create dynamic, reproducible documents using Quarto and markdown syntax.                                                                 |
+|                                                             | 2.  Embedding R code                    | 2.  Integrate R code and inline calculations within narrative text                                                                                    |
+|                                                             | 3.  Formatting outputs                  | 3.  Format tables and plots for professional presentation.                                                                                            |
+|                                                             | 4.  Rendering reports                   | 4.  Render reports to multiple formats (HTML, PDF, Word)                                                                                              |
+|                                                             | 5.  Exporting reports                   | 5.  Produce transparent, replicable research outputs for academic and policy contexts.                                                                |
++-------------------------------------------------------------+-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module 6: Version control with Git and Github               | 1.  Introductin to Git                  | 1.  Understand the basics of version control and why it matters in programming and research.                                                          |
+|                                                             | 2.  Git workflows                       | 2.  Learn to initialize repositories, commit changes, and manage branches.                                                                            |
+|                                                             | 3.  Github basics                       | 3.  Push repositories to Github, collaborate with peers, and manage issues.                                                                           |
+|                                                             | 4.  Practical application               | 4.  Apply Git/Github to manage R projects and Quarto reports.                                                                                         |
++-------------------------------------------------------------+-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module 7: Creating a Quarto website                         | 1.  Introduction to Quarto websites     | 1.  Learn the structure and purpose of Quarto websites for academic and project communication.                                                        |
+|                                                             | 2.  Website setup                       | 2.  Create a basic Quarto website, configure navigation, and customize themes.                                                                        |
+|                                                             | 3.  Embedding content                   | 3.  Add pages, plots, tables, and interactive elements.                                                                                               |
+|                                                             | 4.  Publishing                          | 4.  Deploy websites to Github Pages for public access.                                                                                                |
+|                                                             | 5.  Case study                          | 5.  Build a simple course or project website showcasing economic data analysis.                                                                       |
++-------------------------------------------------------------+-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+

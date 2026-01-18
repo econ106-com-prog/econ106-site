@@ -1,0 +1,1 @@
+Sitemap: https://github.com/econ106-com-prog/econ106-site/sitemap.xml

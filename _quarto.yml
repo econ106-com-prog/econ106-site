@@ -5,22 +5,22 @@ project:
 website:
   page-navigation: true
   title: "Econ 106"
-  favicon: "plot/econ148-hex-logo.png"
+  favicon: "plot/econ106-logo.png"
   
-  repo-url: https://github.com/econ148-analytical-stat-package
-  site-url: https://econ148-analytical-stat-package.github.io/econ148-site/
+  repo-url: https://econ106-com-prog.github.io/econ106-site/
+  site-url: https://github.com/econ106-com-prog/econ106-site
   
   sidebar:
     style: docked
     pinned: true
     seacrh: true
-    logo: "plot/econ148-hex-logo.png"
+    logo: "plot/econ106-logo.png"
     contents:
       - href: "index.qmd"
         text: "Home"
       - section: "Topics"
         contents:
-          - href: "m1-intro-r.qmd"
+          - href: "module-1-intro-r-programming.qmd"
             text: "Module 1: Introduction to R programming"
          
 
