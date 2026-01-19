@@ -15,5 +15,16 @@
     "crumbs": [
       "Home"
     ]
+  },
+  {
+    "objectID": "module-1-intro-r-programming.html",
+    "href": "module-1-intro-r-programming.html",
+    "title": "Module 1: Introduction to R programming",
+    "section": "",
+    "text": "Installing R and RStudio\nPackages and help pages\nR objects\nR notation\n\nView slides in new window\n\n\n\n\n\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "crumbs": [
+      "Topics",
+      "Module 1: Introduction to R programming"
+    ]
   }
 ]
