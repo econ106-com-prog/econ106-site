@@ -35,6 +35,11 @@ website:
           - href: ""
             text: "Module 7: Creating a Quarto website"
 
+      - section: "Laboratory exercises"
+        contents:
+          - href: "module-1-exercise-1.qmd"
+            text: "Exercise 1: Introduction to R programming"
+
          
 
 format:
