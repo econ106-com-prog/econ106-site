@@ -1,6 +1,8 @@
 ---
-title: "Exercise 1: Introduction to R programming"
+title: ""
 ---
+
+![](plot/econ106-module1.png)
 
 # Objective
 To familiarize students with the R programming environment, basic commands, and fundamental concepts such as packages, help pages, R objects, and notation.
@@ -19,7 +21,7 @@ To familiarize students with the R programming environment, basic commands, and 
 
 4. Upload to Google Form
 
-    - Upload your R script `module1_lab_lastname_firstname.R` using this [Submission link]().
+    - Upload your R script `module1_lab_lastname_firstname.R` using this [Submission link](https://forms.gle/CHzvjVa8WpUR4Mf97).
     - Fill in the required student information fields (Name, Student ID, Course/Year).
     - Submit before the deadline
 
