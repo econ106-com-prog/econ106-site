@@ -2,10 +2,10 @@
 title: "Module 1: Introduction to R programming"
 ---
 
-1. Installing R and RStudio
-2. Packages and help pages
-3. R objects
-5. R notation
+1.  Installing R and RStudio
+2.  Packages and help pages
+3.  R objects
+4.  R notation
 
 <a href="https://econ106-com-prog.github.io/econ106-lecture/module-1-intro-r" target="_blank" class="btn-slides">View slides in new window</a>
 
