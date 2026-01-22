@@ -1,8 +1,4 @@
 ---
-
-
-
----
 title: "Econ 106: Computer programming for economics"
 ---
 

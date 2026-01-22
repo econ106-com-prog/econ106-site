@@ -17,8 +17,8 @@ website:
     logo: "plot/econ106-logo.png"
     contents:
       - href: "index.qmd"
-        text: "Home"
-      - section: "Topics"
+        text: "**Home**"
+      - section: "**Topics**"
         contents:
           - href: "module-1-intro-r-programming.qmd"
             text: "Module 1: Introduction to R programming"
@@ -35,10 +35,19 @@ website:
           - href: ""
             text: "Module 7: Creating a Quarto website"
 
-      - section: "Laboratory exercises"
+      - section: "**Laboratory exercises**"
         contents:
+          - href: "quizzes.qmd"
+            text: "Quizzes"
           - href: "module-1-exercise-1.qmd"
             text: "Exercise 1: Introduction to R programming"
+
+      - section: "**Class records**"
+        contents:
+          - href: "class-record.qmd"
+            text: "Grades"
+          - href: "quizzes.qmd"
+            text: "Quizzes"
 
          
 
