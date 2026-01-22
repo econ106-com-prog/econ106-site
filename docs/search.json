@@ -2,11 +2,11 @@
   {
     "objectID": "quizzes.html",
     "href": "quizzes.html",
-    "title": "Quizzes",
+    "title": "Econ 106",
     "section": "",
     "text": "Module\nDescription\nLink\n\n\n\n\nModule 1: Introduction to R programming\nThis quiz covers Module 1 topics: Installing R and RStudio, packages and help pages, R objects, and R notation. Answer all questions carefully. Each item is worth 2 points.  \nQuiz 1\n\n\nModule 2: Data management and transformation with Tidyverse\n\n\n\n\nModule 3: Data visualization with ggplot2\n\n\n\n\nModule 4: Exploratory data analysis (EDA)\n\n\n\n\nModule 5: Data analysis report with Quarto",
     "crumbs": [
-      "**Laboratory exercises**",
+      "**Class records**",
       "Quizzes"
     ]
   },

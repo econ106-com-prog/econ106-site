@@ -37,8 +37,6 @@ website:
 
       - section: "**Laboratory exercises**"
         contents:
-          - href: "quizzes.qmd"
-            text: "Quizzes"
           - href: "module-1-exercise-1.qmd"
             text: "Exercise 1: Introduction to R programming"
 

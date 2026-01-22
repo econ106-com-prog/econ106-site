@@ -1,9 +1,13 @@
 ---
-title: "Quizzes"
+title: ""
 ---
 
+![](plot/econ106-banner-2.png)
+
+<br>
+
 | Module | Description | Link |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | Module 1: Introduction to R programming | This quiz covers Module 1 topics: Installing R and RStudio, packages and help pages, R objects, and R notation. Answer all questions carefully. Each item is worth 2 points.   | [Quiz 1](https://forms.gle/qcDBw2RiPAK8H2Xm7) |
 | Module 2: Data management and transformation with Tidyverse |  |  |
 | Module 3: Data visualization with ggplot2 |  |  |
