@@ -11,6 +11,34 @@
     ]
   },
   {
+    "objectID": "module-1-intro-r-programming.html",
+    "href": "module-1-intro-r-programming.html",
+    "title": "Module 1: Introduction to R programming",
+    "section": "",
+    "text": "Installing R and RStudio\nPackages and help pages\nR objects\nR notation\n\nView slides in new window\n\n\n\n\n\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "crumbs": [
+      "**Topics**",
+      "Module 1: Introduction to R programming"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Econ 106: Computer programming for economics",
+    "section": "",
+    "text": "Class schedule: Monday and Thursday | 13:00 - 14:00 Laboratory schedule: Wednesday | 16:00 - 19:00 Instructor: Christopher Llones e-mail: christopher.llones@vsu.edu.ph Pre-requisites: Math 13 Course credits: 3 units Number of hours: 2 hrs lectures and 3 hrs laboratory per week \n\n\nCourse description\nIntroduction to computer programming for economics using R. The course emphasizes data management, visualization, exploratory analysis, and reproducible reporting for economic research.\n\n\nCourse objectives\n\nDevelop proficiency in R programming for economic applications\nManage and transform datasets using the Tidyverse ecosystem.\nCreate and customize data visualizations with ggplot2.\nPerform exploratory data analysis (EDA) to summarize and interpret economic data.\nProduce reproducible reports with Quarto integrating narrative, code, and results.\n\n\n\nCourse outline\n\n\n\n\n\n\n\n\nTopics\nLessons\nDescription\n\n\n\n\nModule 1: Introduction to R Programming\n\nInstalling R and RStudio\nPackages and help pages\nR objects\nR notation\n\n\nLearn to install and configure R and RStudio.\nUnderstand how to install, load, and manage R packages. Explore R’s built-in help system and documentation for functions and datasets.\nLearn about fundamental R objects including vectors, matrices, lists, and data frames. Understand how to create, manipulate, and inspect objects.\nDevelop proficiency in R’s notation, including indexing, subsetting, applying functions to objects.\n\n\n\nModule 2: Data management and transformation with Tidyverse\n\nIntroduction to Tidyverse\ndplyr basics\nData reshaping\nHandling missing data\nCase studies\n\n\nUnderstand the philosophy of Tidyverse and its role in data science workflows.\nLearn functions for filtering, selecting, mutating, summarizing, and arranging data.\nApply pivoting and joining techniques to restructure datasets.\nIdentify, manage, and impute missing values in datasets.\n\n\n\nModule 3: Data visualization with ggplot2\n\nGrammar of graphics\nBasic plots\nMapping aesthetics\nGeometries and faceting\nThemes and export\n\n\nUnderstand the grammar of graphics and its role in structuring visualizations.\nCreate histograms, bar charts, boxplots, and scatterplots.\nMap variables to color, shapes, to enhance interpretability.\nApply geometries and faceting techniques for comparative analysis.\nModify plot themes and export visualizations for reports and presentations.\n\n\n\nModule 4: Exploratory data analysis (EDA)\n\nRudiments of EDA\nCharts and tables\nMeasures of central tendency\nDispersion and distribution\nContingency tables and scatterplots\n\n\nDiscuss EDA as the first step in data analysis.\nSummarize and visualize data using tables and plots.\nCompute and interpret mean, median, mode, and quantiles.\nAnalyze variance, standard deviation, skewness, and kurtosis.\nExplore relationship between categorical variables and continuous variables.\n\n\n\n\nModule 5: Data analysis report with Quarto\n\nIntroduction to Quarto\nEmbedding R code\nFormatting outputs\nRendering reports\nExporting reports\n\n\nLearn to create dynamic, reproducible documents using Quarto and markdown syntax.\nIntegrate R code and inline calculations within narrative text\nFormat tables and plots for professional presentation.\nRender reports to multiple formats (HTML, PDF, Word)\nProduce transparent, replicable research outputs for academic and policy contexts.\n\n\n\nModule 6: Version control with Git and Github\n\nIntroductin to Git\nGit workflows\nGithub basics\nPractical application\n\n\nUnderstand the basics of version control and why it matters in programming and research.\nLearn to initialize repositories, commit changes, and manage branches.\nPush repositories to Github, collaborate with peers, and manage issues.\nApply Git/Github to manage R projects and Quarto reports.\n\n\n\nModule 7: Creating a Quarto website\n\nIntroduction to Quarto websites\nWebsite setup\nEmbedding content\nPublishing\nCase study\n\n\nLearn the structure and purpose of Quarto websites for academic and project communication.\nCreate a basic Quarto website, configure navigation, and customize themes.\nAdd pages, plots, tables, and interactive elements.\nDeploy websites to Github Pages for public access.\nBuild a simple course or project website showcasing economic data analysis.",
+    "crumbs": [
+      "**Home**"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
     "objectID": "module-1-exercise-1.html#part-a-setting-up-r-and-rstudio",
     "href": "module-1-exercise-1.html#part-a-setting-up-r-and-rstudio",
     "title": "Objective",
@@ -55,31 +83,10 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "module-2-data-management.html",
+    "href": "module-2-data-management.html",
+    "title": "Module 2:",
     "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Econ 106: Computer programming for economics",
-    "section": "",
-    "text": "Class schedule: Monday and Thursday | 13:00 - 14:00 Laboratory schedule: Wednesday | 16:00 - 19:00 Instructor: Christopher Llones e-mail: christopher.llones@vsu.edu.ph Pre-requisites: Math 13 Course credits: 3 units Number of hours: 2 hrs lectures and 3 hrs laboratory per week \n\n\nCourse description\nIntroduction to computer programming for economics using R. The course emphasizes data management, visualization, exploratory analysis, and reproducible reporting for economic research.\n\n\nCourse objectives\n\nDevelop proficiency in R programming for economic applications\nManage and transform datasets using the Tidyverse ecosystem.\nCreate and customize data visualizations with ggplot2.\nPerform exploratory data analysis (EDA) to summarize and interpret economic data.\nProduce reproducible reports with Quarto integrating narrative, code, and results.\n\n\n\nCourse outline\n\n\n\n\n\n\n\n\nTopics\nLessons\nDescription\n\n\n\n\nModule 1: Introduction to R Programming\n\nInstalling R and RStudio\nPackages and help pages\nR objects\nR notation\n\n\nLearn to install and configure R and RStudio.\nUnderstand how to install, load, and manage R packages. Explore R’s built-in help system and documentation for functions and datasets.\nLearn about fundamental R objects including vectors, matrices, lists, and data frames. Understand how to create, manipulate, and inspect objects.\nDevelop proficiency in R’s notation, including indexing, subsetting, applying functions to objects.\n\n\n\nModule 2: Data management and transformation with Tidyverse\n\nIntroduction to Tidyverse\ndplyr basics\nData reshaping\nHandling missing data\nCase studies\n\n\nUnderstand the philosophy of Tidyverse and its role in data science workflows.\nLearn functions for filtering, selecting, mutating, summarizing, and arranging data.\nApply pivoting and joining techniques to restructure datasets.\nIdentify, manage, and impute missing values in datasets.\n\n\n\nModule 3: Data visualization with ggplot2\n\nGrammar of graphics\nBasic plots\nMapping aesthetics\nGeometries and faceting\nThemes and export\n\n\nUnderstand the grammar of graphics and its role in structuring visualizations.\nCreate histograms, bar charts, boxplots, and scatterplots.\nMap variables to color, shapes, to enhance interpretability.\nApply geometries and faceting techniques for comparative analysis.\nModify plot themes and export visualizations for reports and presentations.\n\n\n\nModule 4: Exploratory data analysis (EDA)\n\nRudiments of EDA\nCharts and tables\nMeasures of central tendency\nDispersion and distribution\nContingency tables and scatterplots\n\n\nDiscuss EDA as the first step in data analysis.\nSummarize and visualize data using tables and plots.\nCompute and interpret mean, median, mode, and quantiles.\nAnalyze variance, standard deviation, skewness, and kurtosis.\nExplore relationship between categorical variables and continuous variables.\n\n\n\n\nModule 5: Data analysis report with Quarto\n\nIntroduction to Quarto\nEmbedding R code\nFormatting outputs\nRendering reports\nExporting reports\n\n\nLearn to create dynamic, reproducible documents using Quarto and markdown syntax.\nIntegrate R code and inline calculations within narrative text\nFormat tables and plots for professional presentation.\nRender reports to multiple formats (HTML, PDF, Word)\nProduce transparent, replicable research outputs for academic and policy contexts.\n\n\n\nModule 6: Version control with Git and Github\n\nIntroductin to Git\nGit workflows\nGithub basics\nPractical application\n\n\nUnderstand the basics of version control and why it matters in programming and research.\nLearn to initialize repositories, commit changes, and manage branches.\nPush repositories to Github, collaborate with peers, and manage issues.\nApply Git/Github to manage R projects and Quarto reports.\n\n\n\nModule 7: Creating a Quarto website\n\nIntroduction to Quarto websites\nWebsite setup\nEmbedding content\nPublishing\nCase study\n\n\nLearn the structure and purpose of Quarto websites for academic and project communication.\nCreate a basic Quarto website, configure navigation, and customize themes.\nAdd pages, plots, tables, and interactive elements.\nDeploy websites to Github Pages for public access.\nBuild a simple course or project website showcasing economic data analysis.",
-    "crumbs": [
-      "**Home**"
-    ]
-  },
-  {
-    "objectID": "module-1-intro-r-programming.html",
-    "href": "module-1-intro-r-programming.html",
-    "title": "Module 1: Introduction to R programming",
-    "section": "",
-    "text": "Installing R and RStudio\nPackages and help pages\nR objects\nR notation\n\nView slides in new window\n\n\n\n\n\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
-    "crumbs": [
-      "**Topics**",
-      "Module 1: Introduction to R programming"
-    ]
+    "text": "Introduction to Tidyverse\nData framea and tibble\nBasic data wrangling with dplyr\nData reshaping\nHandling missing data\n\nView slides in new window\n\n\n\n\n\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts"
   }
 ]

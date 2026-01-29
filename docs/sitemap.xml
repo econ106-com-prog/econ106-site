@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/econ106-com-prog/econ106-site/quizzes.html</loc>
-    <lastmod>2026-01-22T07:03:08.760Z</lastmod>
+    <lastmod>2026-01-29T02:18:29.424Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/econ106-com-prog/econ106-site/module-1-exercise-1.html</loc>
-    <lastmod>2026-01-21T01:52:34.774Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/econ106-com-prog/econ106-site/class-record.html</loc>
-    <lastmod>2026-01-22T06:54:51.900Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/econ106-com-prog/econ106-site/about.html</loc>
-    <lastmod>2026-01-19T02:26:33.989Z</lastmod>
+    <loc>https://github.com/econ106-com-prog/econ106-site/module-1-intro-r-programming.html</loc>
+    <lastmod>2026-01-29T02:20:02.088Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/econ106-com-prog/econ106-site/index.html</loc>
     <lastmod>2026-01-22T03:10:56.850Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/econ106-com-prog/econ106-site/module-1-intro-r-programming.html</loc>
-    <lastmod>2026-01-22T03:03:16.355Z</lastmod>
+    <loc>https://github.com/econ106-com-prog/econ106-site/about.html</loc>
+    <lastmod>2026-01-19T02:26:33.989Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/econ106-com-prog/econ106-site/class-record.html</loc>
+    <lastmod>2026-01-22T06:54:51.900Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/econ106-com-prog/econ106-site/module-1-exercise-1.html</loc>
+    <lastmod>2026-01-21T01:52:34.774Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/econ106-com-prog/econ106-site/module-2-data-management.html</loc>
+    <lastmod>2026-01-29T02:26:13.214Z</lastmod>
   </url>
 </urlset>
