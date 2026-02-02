@@ -87,7 +87,18 @@
     "href": "module-2-data-management.html",
     "title": "Module 2:",
     "section": "",
-    "text": "Introduction to Tidyverse\nData framea and tibble\nBasic data wrangling with dplyr\nData reshaping\nHandling missing data\n\nView slides in new window\n\n\n\n\n\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "text": "Introduction to Tidyverse\nData framea and tibble\nBasic data wrangling with dplyr\nData reshaping\nHandling missing data\nView slides in new window",
+    "crumbs": [
+      "**Topics**",
+      "Module 2: Data management and transformation with Tidyverse"
+    ]
+  },
+  {
+    "objectID": "module-2-data-management.html#class-exercise-demonstration",
+    "href": "module-2-data-management.html#class-exercise-demonstration",
+    "title": "Module 2:",
+    "section": "Class exercise demonstration",
+    "text": "Class exercise demonstration\n\nDownload the entire folder module-2-intro-r-data-management from the Google Drive link. For the meantime, keep the folder in your computer and wait for further instructions during the class.",
     "crumbs": [
       "**Topics**",
       "Module 2: Data management and transformation with Tidyverse"

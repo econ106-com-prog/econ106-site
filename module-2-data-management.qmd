@@ -33,3 +33,9 @@ title: "Module 2: "
 </ul>
 :::
 ::::
+
+<br>
+
+## Class exercise demonstration
+
+1. Download the entire folder `module-2-intro-r-data-management` from the [Google Drive link](https://drive.google.com/drive/folders/1QfaVv-6sQg3NpTuXV8Fc4-hpNdu_pzcp?usp=sharing). For the meantime, keep the folder in your computer and wait for further instructions during the class.
