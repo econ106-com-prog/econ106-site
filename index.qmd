@@ -4,21 +4,20 @@ title: "Econ 106: Computer programming for economics"
 
 <br>
 
-**Class schedule:** Monday and Thursday \| 13:00 - 14:00 <br>**Laboratory schedule:** Wednesday \| 16:00 - 19:00 <br>**Instructor:** Christopher Llones <br>**e-mail:** christopher.llones\@vsu.edu.ph <br>**Pre-requisites:** Math 13 <br>**Course credits:** 3 units <br>**Number of hours:** 2 hrs lectures and 3 hrs laboratory per week <br>
+**Class schedule:** Monday and Thursday \| 13:00 - 14:00 Room Econ-135 <br>**Laboratory schedule:** Wednesday \| 10:00 - 13:00 <br>**Instructor:** Christopher Llones <br>**e-mail:** christopher.llones\@vsu.edu.ph <br>**Pre-requisites:** Math 13 <br>**Course credits:** 3 units <br>**Number of hours:** 2 hrs lectures and 3 hrs laboratory per week <br>
 
 ------------------------------------------------------------------------
 
 ### Course description
 
-Introduction to computer programming for economics using R. The course emphasizes data management, visualization, exploratory analysis, and reproducible reporting for economic research.
+This course introduces students to computer programming using R, with applications in economics. It covers the installation and use of R and RStudio, packages and help pages, R objects and notation, data management with Tidyverse, data visualization with ggplot2, exploratory data analysis, reproducible reporting with Quarto, version control with Git/GitHub, and Quarto website creation. By the end of the course, students will be able to design transparent, reproducible workflows for economic data analysis and communicate results effectively.
 
-### Course objectives
+### Course outcomes
 
--   Develop proficiency in R programming for economic applications
--   Manage and transform datasets using the Tidyverse ecosystem.
--   Create and customize data visualizations with ggplot2.
--   Perform exploratory data analysis (EDA) to summarize and interpret economic data.
--   Produce reproducible reports with Quarto integrating narrative, code, and results.
+-   CO1: Demonstrate foundational proficiency in R programming.
+-   CO2: Apply data management and visualization techniques for economic analysis
+-   CO3: Conduct exploratory data analysis and produce reproducible reports.
+-   CO4: Utilize collaborative tools and digital publishing for reproducible workflows.
 
 ### Course outline
 
