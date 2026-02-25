@@ -39,6 +39,8 @@ website:
         contents:
           - href: "module-1-exercise-1.qmd"
             text: "Exercise 1: Introduction to R programming"
+          - href: "module-2-exercise-2.qmd"
+            text: "Exercise 2: Data management and transformation with Tidyverse"
 
       - section: "**Class records**"
         contents:

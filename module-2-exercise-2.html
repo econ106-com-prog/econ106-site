@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>class-record – Econ 106</title>
+<title>module-2-exercise-2 – Econ 106</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./quizzes.html" rel="next">
-<link href="./module-2-exercise-2.html" rel="prev">
+<link href="./class-record.html" rel="next">
+<link href="./module-1-exercise-1.html" rel="prev">
 <link href="./plot/econ106-logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -249,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./class-record.html"><strong>Class records</strong></a></li><li class="breadcrumb-item"><a href="./class-record.html">Grades</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./module-1-exercise-1.html"><strong>Laboratory exercises</strong></a></li><li class="breadcrumb-item"><a href="./module-2-exercise-2.html">Exercise 2: Data management and transformation with Tidyverse</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -339,7 +339,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module-2-exercise-2.html" class="sidebar-item-text sidebar-link">
+  <a href="./module-2-exercise-2.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Exercise 2: Data management and transformation with Tidyverse</span></a>
   </div>
 </li>
@@ -356,7 +356,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./class-record.html" class="sidebar-item-text sidebar-link active">
+  <a href="./class-record.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Grades</span></a>
   </div>
 </li>
@@ -373,40 +373,85 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./class-record.html"><strong>Class records</strong></a></li><li class="breadcrumb-item"><a href="./class-record.html">Grades</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./module-1-exercise-1.html"><strong>Laboratory exercises</strong></a></li><li class="breadcrumb-item"><a href="./module-2-exercise-2.html">Exercise 2: Data management and transformation with Tidyverse</a></li></ol></nav></header>
 
 
 
 
 
-<p><img src="plot/econ106-banner-2.png" class="img-fluid"></p>
-<style>
-  .responsive-form {
-    position: relative;
-    padding-bottom: 80%;
-    height: 0;
-    overflow: hidden;
-  }
-
-  .responsive-form iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-</style>
-<div class="responsive-form">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1ox2vvtr-tk9K3ZNhahFvQj1umIc_PQSFF3Ka_F6kGbZLZF8gMJoic8esBCiVlKLp4GDl9dFejsLm/pubhtml?gid=1191386531&amp;single=true&amp;widget=true&amp;headers=false" allowfullscreen="">
-</iframe>
+<p><img src="plot/econ06-exer2.png" class="img-fluid"></p>
+<p><strong>Course Title</strong>: Econ 106 Computer programming for economcis <br> <strong>Instructor</strong>: Christopher Llones <br> <strong>Exercise</strong>: Netflix Dataset Analysis in R <br> <strong>Due Date</strong>: 4 March 2026</p>
+<section id="objective" class="level2">
+<h2 class="anchored" data-anchor-id="objective">Objective</h2>
+<p>This exercise will assess your ability to apply R programming skills specifically using the <code>dplyr</code> package and the pipe operator (<code>%&gt;%</code>) to explore and analyze a real-world dataset. You will work with the Netflix Movies &amp; TV Shows dataset to answer questions using code.</p>
+</section>
+<section id="instructions" class="level2">
+<h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
+<ul>
+<li><p>Use R and the <code>dplyr</code> package to answer each question.</p></li>
+<li><p>Submit your <code>R script file (.R)</code> with your code and outputs.</p></li>
+<li><p>Use the pipe operator (<code>%&gt;%</code>) for all data manipulations.</p></li>
+<li><p>You may use additional packages like <code>tidyr</code> or <code>stringr</code> if needed.</p></li>
+<li><p>Ensure your code is clean, commented, and reproducible.</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Dataset and files
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Access the dataset and R script template from the <a href="https://drive.google.com/drive/folders/19Joe8EmuE7B_N4f_WdIpPgQx3tDwURrJ?usp=sharing">econ106-exercise-2</a> folder.</p></li>
+<li><p>Submit your completed R script file (.R) by the due date and upload using this link: <a href="">Submission Link</a>.</p></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions</h2>
+<p><strong>Part 1: Data exploration</strong></p>
+<ol type="1">
+<li><p>How many rows and columns are in the dataset?</p></li>
+<li><p>List all unique types of content (e.g., Movie, TV Show).</p></li>
+<li><p>How many titles were released in 2020?</p></li>
+</ol>
+<p><strong>Part 2: filtering and summarising</strong></p>
+<ol start="4" type="1">
+<li><p>Filter the dataset to show only TV Shows released in India. How many are there?</p></li>
+<li><p>Find the top 5 most common ratings.</p></li>
+<li><p>Which year had the most titles added to Netflix?</p></li>
+</ol>
+<p><strong>Part 3: grouping and aggregation</strong></p>
+<ol start="7" type="1">
+<li><p>Group the data by <code>type</code> and count how many entries each type has.</p></li>
+<li><p>Group the data by <code>release_year</code> and summarize the number of titles released per year.</p></li>
+<li><p>Which country has produced the most content on Netflix?</p></li>
+</ol>
+<p><strong>Advanced Filtering</strong></p>
+<ol start="10" type="1">
+<li><p>Filter the dataset to show all Movies with a duration longer than 100 minutes.</p></li>
+<li><p>Find all titles directed by ‘Steven Spielberg’.</p></li>
+<li><p>List all titles with the genre containing ‘Documentary’.</p></li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -824,13 +869,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./module-2-exercise-2.html" class="pagination-link" aria-label="Exercise 2: Data management and transformation with Tidyverse">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Exercise 2: Data management and transformation with Tidyverse</span>
+      <a href="./module-1-exercise-1.html" class="pagination-link" aria-label="Exercise 1: Introduction to R programming">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Exercise 1: Introduction to R programming</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./quizzes.html" class="pagination-link" aria-label="Quizzes">
-        <span class="nav-page-text">Quizzes</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./class-record.html" class="pagination-link" aria-label="Grades">
+        <span class="nav-page-text">Grades</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
