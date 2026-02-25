@@ -27,7 +27,7 @@ This exercise will assess your ability to apply R programming skills specificall
 
 1.  Access the dataset and R script template from the [econ106-exercise-2](https://drive.google.com/drive/folders/19Joe8EmuE7B_N4f_WdIpPgQx3tDwURrJ?usp=sharing) folder.
 
-2.  Submit your completed R script file (.R) by the due date and upload using this link: [Submission Link]().
+2.  Submit your completed R script file (.R) by the due date and upload using this link: [Submission Link](https://forms.gle/g65QBPUk872cuuKU6).
 :::
 
 ## Questions
