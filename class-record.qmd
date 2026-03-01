@@ -1,0 +1,29 @@
+---
+title: ""
+---
+
+![](plot/econ106-banner-2.png)
+
+```{=html}
+<style>
+  .responsive-form {
+    position: relative;
+    padding-bottom: 80%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .responsive-form iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+</style>
+```
+
+::: responsive-form
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1ox2vvtr-tk9K3ZNhahFvQj1umIc_PQSFF3Ka_F6kGbZLZF8gMJoic8esBCiVlKLp4GDl9dFejsLm/pubhtml?gid=1191386531&single=true&widget=true&headers=false" allowfullscreen></iframe>
+:::

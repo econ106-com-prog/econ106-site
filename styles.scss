@@ -69,3 +69,10 @@ td {
   transform: rotate(1deg);
   font-weight: bolder;
 }
+
+.content-area {
+    width: 100%; /* Or a specific width, like 1200px */
+    max-width: none; /* Remove any max-width restrictions */
+    margin: 0;      /* Remove margins that might be adding space */
+    padding: 0;     /* Remove padding that might be adding space */
+}
