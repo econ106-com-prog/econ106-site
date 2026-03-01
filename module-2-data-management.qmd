@@ -1,5 +1,5 @@
 ---
-title: "Module 2: "
+title: "Module 2: Data management and transformation with Tidyverse"
 ---
 
 1.  Introduction to Tidyverse
@@ -38,4 +38,4 @@ title: "Module 2: "
 
 ## Class exercise demonstration
 
-1. Download the entire folder `module-2-intro-r-data-management` from the [Google Drive link](https://drive.google.com/drive/folders/1QfaVv-6sQg3NpTuXV8Fc4-hpNdu_pzcp?usp=sharing). For the meantime, keep the folder in your computer and wait for further instructions during the class.
+1.  Download the entire folder `module-2-intro-r-data-management` from the [Google Drive link](https://drive.google.com/drive/folders/1QfaVv-6sQg3NpTuXV8Fc4-hpNdu_pzcp?usp=sharing). For the meantime, keep the folder in your computer and wait for further instructions during the class.
