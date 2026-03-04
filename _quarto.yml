@@ -24,7 +24,7 @@ website:
             text: "Module 1: Introduction to R programming"
           - href: "module-2-data-management.qmd"
             text: "Module 2: Data management and transformation with Tidyverse"
-          - href: ""
+          - href: "module-3-dataviz-ggplot.qmd"
             text: "Module 3: Data visualization with ggplot2"
           - href: ""
             text: "Module 4: Exploratory data analysis (EDA)"

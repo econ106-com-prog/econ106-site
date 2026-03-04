@@ -153,13 +153,10 @@
     "href": "module-3-dataviz-ggplot.html",
     "title": "Module 3: Data visualization with ggplot2",
     "section": "",
-    "text": "Understanding the grammar of graphics\nMapping and aesthetics\nGeometries and faceting\nThemese and export\n\nView slides in new window\n\n\n\n\n\n\n\n\n\n\nTipPresentation keyboard shortcuts\n\n\n\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts"
-  },
-  {
-    "objectID": "module-3-dataviz-ggplot.html#class-exercise-demonstration",
-    "href": "module-3-dataviz-ggplot.html#class-exercise-demonstration",
-    "title": "Module 3: Data visualization with ggplot2",
-    "section": "Class exercise demonstration",
-    "text": "Class exercise demonstration\n\nDownload the entire folder module-2-intro-r-data-management from the Google Drive link. For the meantime, keep the folder in your computer and wait for further instructions during the class."
+    "text": "Understanding the grammar of graphics\nMapping and aesthetics\nGeometries and faceting\nThemese and export\n\nView slides in new window\n\n\n\n\n\n\n\n\n\n\nTipPresentation keyboard shortcuts\n\n\n\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "crumbs": [
+      "**Topics**",
+      "Module 3: Data visualization with ggplot2"
+    ]
   }
 ]
