@@ -15,7 +15,7 @@
     "href": "term-01-midterm-project.html#dataset-description",
     "title": "Econ 106",
     "section": "Dataset Description",
-    "text": "Dataset Description\n\n\n\nVariable metadata and tsunami relevance\n\n\n\n\n\n\n\n\n\nFeature\nType\nDescription\nRange / Values\nTsunami relevance\n\n\n\n\nmagnitude\nFloat\nEarthquake magnitude (Richter scale)\n6.5 - 9.1\nHigh — Primary tsunami predictor\n\n\ncdi\nInteger\nCommunity Decimal Intensity (felt intensity)\n0 - 9\nMedium — Population impact measure\n\n\nmmi\nInteger\nModified Mercalli Intensity (instrumental)\n1 - 9\nMedium — Structural damage indicator\n\n\nsig\nInteger\nEvent significance score\n650 - 2910\nHigh — Overall hazard assessment\n\n\nnst\nInteger\nNumber of seismic monitoring stations\n0 - 934\nLow — Data quality indicator\n\n\ndmin\nFloat\nDistance to nearest seismic station (degrees)\n0.0 - 17.7\nLow — Location precision\n\n\ngap\nFloat\nAzimuthal gap between stations (degrees)\n0.0 - 239.0\nLow — Location reliability\n\n\ndepth\nFloat\nEarthquake focal depth (km)\n2.7 - 670.8\nHigh — Shallow = higher tsunami risk\n\n\nlatitude\nFloat\nEpicenter latitude (WGS84)\n−61.85° to 71.63°\nHigh — Ocean proximity indicator\n\n\nlongitude\nFloat\nEpicenter longitude (WGS84)\n−179.97° to 179.66°\nHigh — Ocean proximity indicator\n\n\nYear\nInteger\nYear of occurrence\n2001 - 2022\nMedium — Temporal patterns\n\n\nMonth\nInteger\nMonth of occurrence\n1 - 12\nLow — Seasonal analysis\n\n\ntsunami\nBinary\nTsunami potential (TARGET)\n0, 1\nTarget variable",
+    "text": "Dataset Description\n\n\nWarning: package 'tibble' was built under R version 4.5.3\n\n\nWarning: package 'knitr' was built under R version 4.5.3\n\n\n\nVariable metadata and tsunami relevance\n\n\n\n\n\n\n\n\n\nFeature\nType\nDescription\nRange / Values\nTsunami relevance\n\n\n\n\nmagnitude\nFloat\nEarthquake magnitude (Richter scale)\n6.5 - 9.1\nHigh — Primary tsunami predictor\n\n\ncdi\nInteger\nCommunity Decimal Intensity (felt intensity)\n0 - 9\nMedium — Population impact measure\n\n\nmmi\nInteger\nModified Mercalli Intensity (instrumental)\n1 - 9\nMedium — Structural damage indicator\n\n\nsig\nInteger\nEvent significance score\n650 - 2910\nHigh — Overall hazard assessment\n\n\nnst\nInteger\nNumber of seismic monitoring stations\n0 - 934\nLow — Data quality indicator\n\n\ndmin\nFloat\nDistance to nearest seismic station (degrees)\n0.0 - 17.7\nLow — Location precision\n\n\ngap\nFloat\nAzimuthal gap between stations (degrees)\n0.0 - 239.0\nLow — Location reliability\n\n\ndepth\nFloat\nEarthquake focal depth (km)\n2.7 - 670.8\nHigh — Shallow = higher tsunami risk\n\n\nlatitude\nFloat\nEpicenter latitude (WGS84)\n−61.85° to 71.63°\nHigh — Ocean proximity indicator\n\n\nlongitude\nFloat\nEpicenter longitude (WGS84)\n−179.97° to 179.66°\nHigh — Ocean proximity indicator\n\n\nYear\nInteger\nYear of occurrence\n2001 - 2022\nMedium — Temporal patterns\n\n\nMonth\nInteger\nMonth of occurrence\n1 - 12\nLow — Seasonal analysis\n\n\ntsunami\nBinary\nTsunami potential (TARGET)\n0, 1\nTarget variable",
     "crumbs": [
       "**Midterm & Final projects**",
       "Midterm project: Earthquake and tsunami analysis"
@@ -44,37 +44,120 @@
     ]
   },
   {
-    "objectID": "module-3-dataviz-ggplot.html",
-    "href": "module-3-dataviz-ggplot.html",
-    "title": "Module 3: Data visualization with ggplot2",
+    "objectID": "module-3-exercise-3.html",
+    "href": "module-3-exercise-3.html",
+    "title": "Econ 106",
     "section": "",
-    "text": "Understanding the grammar of graphics\nMapping and aesthetics\nGeometries and faceting\nThemese and export\n\nView slides in new window\n\n\n\n\n\n\n\n\n\n\nTipPresentation keyboard shortcuts\n\n\n\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "text": "Course Title: Econ 106 Computer programming for economcis  Instructor: Christopher Llones  Exercise:Replicating a World Bank figure using ggplot2  Due Date: 22 March 2026",
     "crumbs": [
-      "**Topics**",
-      "Module 3: Data visualization with ggplot2"
+      "**Laboratory exercises**",
+      "Exercise 23: Data viz with ggplot2"
     ]
   },
   {
-    "objectID": "module-2-data-management.html",
-    "href": "module-2-data-management.html",
-    "title": "Module 2: Data management and transformation with Tidyverse",
-    "section": "",
-    "text": "Introduction to Tidyverse\nData framea and tibble\nBasic data wrangling with dplyr\nData reshaping\nHandling missing data\nView slides in new window",
+    "objectID": "module-3-exercise-3.html#objective",
+    "href": "module-3-exercise-3.html#objective",
+    "title": "Econ 106",
+    "section": "Objective",
+    "text": "Objective\nBy the end of this exercise, students will be able to:\n\nImport and clean raw Excel data using readxl and janitor.\nTransform data from long to wide format with dplyr and tidyr.\nCreate a bubble scatter plot in ggplot2 with customized aesthetics.\nReplicate a figure from the World Bank’s Human Capital Report.\nInterpret the visualization in terms of economic development and human capital outcomes.",
     "crumbs": [
-      "**Topics**",
-      "Module 2: Data management and transformation with Tidyverse"
+      "**Laboratory exercises**",
+      "Exercise 23: Data viz with ggplot2"
     ]
   },
   {
-    "objectID": "module-2-data-management.html#class-exercise-demonstration",
-    "href": "module-2-data-management.html#class-exercise-demonstration",
-    "title": "Module 2: Data management and transformation with Tidyverse",
-    "section": "Class exercise demonstration",
-    "text": "Class exercise demonstration\n\nDownload the entire folder module-2-intro-r-data-management from the Google Drive link. For the meantime, keep the folder in your computer and wait for further instructions during the class.",
+    "objectID": "module-3-exercise-3.html#data-management",
+    "href": "module-3-exercise-3.html#data-management",
+    "title": "Econ 106",
+    "section": "Data management",
+    "text": "Data management\n\nDownload the dataset: hlo_database.xlsx (from the World Bank Data Catalog).\nInstall (if needed) and load the following packages\n\n\nlibrary(tidyverse)\nlibrary(janitor)\nlibrary(readxl)\nlibrary(ggrepel)\n\n\nUse read_excel() to load the dataset from the World Bank’s Human Capital Report database. Select the correct sheet (in this case, sheet 3).\nApply clean_names() from the janitor package to standardize variable names (lowercase, snake_case).\nSelect and keep only the columns: country, year, hlo_m, and incomegroup. These are the needed variables for analysis.\nFilter the dataset to the years 2006 and 2015, since these are the comparison points for the visualization.\nGroup by incomegroup, country, and year. Compute the average of hlo_m using summarise(mean_hlo = mean(hlo_m)). This ensures each country-year has a single representative value.\nReshape the dataset to wide format. Use pivot_wider() with names_from = year and values_from = mean_hlo. This creates two columns: one for 2006 values and one for 2015 values.\nRemove incomplete cases by applying na.omit() to drop countries missing data for either year.\nRename the year columns to hlo_2006 and hlo_2015 for easier reference in plotting.\nThe final dataset should be similar with the dataset below.",
+    "crumbs": [
+      "**Laboratory exercises**",
+      "Exercise 23: Data viz with ggplot2"
+    ]
+  },
+  {
+    "objectID": "module-3-exercise-3.html#creating-bubble-plot",
+    "href": "module-3-exercise-3.html#creating-bubble-plot",
+    "title": "Econ 106",
+    "section": "Creating Bubble Plot",
+    "text": "Creating Bubble Plot\n\n\n\n\n\n\n\n\n\n\n\nPrepare the income group variable\n\nConvert incomegroup into a factor and set the order of levels (High income, Upper middle income, Lower middle income).\nThis ensures the legend displays groups in a meaningful order.\n\nSet up the plot structure. Use ggplot() with the dataset hlo_dta.\n\nMap aesthetics:\n\nx = hlo_2006 (scores in 2006)\ny = hlo_2015 (scores in 2015)\nsize = hlo_2015 (bubble size reflects 2015 scores)\nfill = incomegroup (bubble fill color shows income group).\n\n\nAdd bubbles with outlines. Use geom_point(shape = 21, color = \"black\") to draw filled circles with a black outline.\nAdd a reference line. Use geom_abline(slope = 1, intercept = 0, linetype = \"dashed\"). This diagonal line shows where 2006 and 2015 scores would be equal. Countries above the line improved; those below declined.\nLabel countries. Use geom_text_repel(aes(label = country)) from the ggrepel package. This places country names near bubbles without overlapping.\nCustomize axes. Use scale_x_continuous() and scale_y_continuous() to set limits (250–650), tick marks every 50, and axis titles. This ensures a consistent scale for comparison.\nCustomize colors and sizes. Use scale_fill_manual() to assign custom colors for income groups. Use scale_size(range = c(1, 8), guide = \"none\") to control bubble size range and hide the size legend.\nAdjust the legend. Use guides(fill = guide_legend(override.aes = list(size = 6), reverse = TRUE)). This enlarges legend bubbles and reverses the order for clarity.\nAdd labels and themes. Use labs(fill = NULL) to remove the legend title. Apply theme_light() for a clean background. Adjust margins, axis text, and legend position with theme() for readability.",
+    "crumbs": [
+      "**Laboratory exercises**",
+      "Exercise 23: Data viz with ggplot2"
+    ]
+  },
+  {
+    "objectID": "module-2-exercise-2.html",
+    "href": "module-2-exercise-2.html",
+    "title": "Econ 106",
+    "section": "",
+    "text": "Course Title: Econ 106 Computer programming for economcis  Instructor: Christopher Llones  Exercise: Netflix Dataset Analysis in R  Due Date: 4 March 2026",
+    "crumbs": [
+      "**Laboratory exercises**",
+      "Exercise 2: Data management and transformation with Tidyverse"
+    ]
+  },
+  {
+    "objectID": "module-2-exercise-2.html#objective",
+    "href": "module-2-exercise-2.html#objective",
+    "title": "Econ 106",
+    "section": "Objective",
+    "text": "Objective\nThis exercise will assess your ability to apply R programming skills specifically using the dplyr package and the pipe operator (%&gt;%) to explore and analyze a real-world dataset. You will work with the Netflix Movies & TV Shows dataset to answer questions using code.",
+    "crumbs": [
+      "**Laboratory exercises**",
+      "Exercise 2: Data management and transformation with Tidyverse"
+    ]
+  },
+  {
+    "objectID": "module-2-exercise-2.html#instructions",
+    "href": "module-2-exercise-2.html#instructions",
+    "title": "Econ 106",
+    "section": "Instructions",
+    "text": "Instructions\n\nUse R and the dplyr package to answer each question.\nSubmit your R script file (.R) with your code and outputs.\nUse the pipe operator (%&gt;%) for all data manipulations.\nYou may use additional packages like tidyr or stringr if needed.\nEnsure your code is clean, commented, and reproducible.\n\n\n\n\n\n\n\nTipDataset and files\n\n\n\n\nAccess the dataset and R script template from the econ106-exercise-2 folder.\nSubmit your completed R script file (.R) by the due date and upload using this link: Submission Link.\nYou may temporarily save your script here.",
+    "crumbs": [
+      "**Laboratory exercises**",
+      "Exercise 2: Data management and transformation with Tidyverse"
+    ]
+  },
+  {
+    "objectID": "module-2-exercise-2.html#questions",
+    "href": "module-2-exercise-2.html#questions",
+    "title": "Econ 106",
+    "section": "Questions",
+    "text": "Questions\nPart 1: Data exploration\n\nHow many rows and columns are in the dataset?\nList all unique types of content (e.g., Movie, TV Show).\nHow many titles were released in 2020?\n\nPart 2: filtering and summarising\n\nFilter the dataset to show only TV Shows released in India. How many are there?\nFind the top 5 most common ratings.\nWhich year had the most titles added to Netflix?\n\nPart 3: grouping and aggregation\n\nGroup the data by type and count how many entries each type has.\nGroup the data by release_year and summarize the number of titles released per year.\nWhich country has produced the most content on Netflix?\n\nAdvanced Filtering\n\nFilter the dataset to show all Movies with a duration longer than 100 minutes.\nFind all titles directed by ‘Steven Spielberg’.\nList all titles with the genre containing ‘Documentary’.",
+    "crumbs": [
+      "**Laboratory exercises**",
+      "Exercise 2: Data management and transformation with Tidyverse"
+    ]
+  },
+  {
+    "objectID": "module-1-intro-r-programming.html",
+    "href": "module-1-intro-r-programming.html",
+    "title": "Module 1: Introduction to R programming",
+    "section": "",
+    "text": "Installing R and RStudio\nPackages and help pages\nR objects\nR notation\n\nView slides in new window\n\n\n\n\n\n\n\n\n\n\nTipPresentation keyboard shortcuts\n\n\n\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
     "crumbs": [
       "**Topics**",
-      "Module 2: Data management and transformation with Tidyverse"
+      "Module 1: Introduction to R programming"
     ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Econ 106: Computer programming for economics",
+    "section": "",
+    "text": "Class schedule: Monday and Thursday | 13:00 - 14:00 Room Econ-135 Laboratory schedule: Wednesday | 10:00 - 13:00 Instructor: Christopher Llones e-mail: christopher.llones@vsu.edu.ph Pre-requisites: Math 13 Course credits: 3 units Number of hours: 2 hrs lectures and 3 hrs laboratory per week \n\n\nCourse description\nThis course introduces students to computer programming using R, with applications in economics. It covers the installation and use of R and RStudio, packages and help pages, R objects and notation, data management with Tidyverse, data visualization with ggplot2, exploratory data analysis, reproducible reporting with Quarto, version control with Git/GitHub, and Quarto website creation. By the end of the course, students will be able to design transparent, reproducible workflows for economic data analysis and communicate results effectively.\n\n\nCourse outcomes\n\nCO1: Demonstrate foundational proficiency in R programming.\nCO2: Apply data management and visualization techniques for economic analysis\nCO3: Conduct exploratory data analysis and produce reproducible reports.\nCO4: Utilize collaborative tools and digital publishing for reproducible workflows.\n\n\n\nCourse outline\n\n\n\n\n\n\n\n\nTopics\nLessons\nDescription\n\n\n\n\nModule 1: Introduction to R Programming\n\nInstalling R and RStudio\nPackages and help pages\nR objects\nR notation\n\n\nLearn to install and configure R and RStudio.\nUnderstand how to install, load, and manage R packages. Explore R’s built-in help system and documentation for functions and datasets.\nLearn about fundamental R objects including vectors, matrices, lists, and data frames. Understand how to create, manipulate, and inspect objects.\nDevelop proficiency in R’s notation, including indexing, subsetting, applying functions to objects.\n\n\n\nModule 2: Data management and transformation with Tidyverse\n\nIntroduction to Tidyverse\ndplyr basics\nData reshaping\nHandling missing data\nCase studies\n\n\nUnderstand the philosophy of Tidyverse and its role in data science workflows.\nLearn functions for filtering, selecting, mutating, summarizing, and arranging data.\nApply pivoting and joining techniques to restructure datasets.\nIdentify, manage, and impute missing values in datasets.\n\n\n\nModule 3: Data visualization with ggplot2\n\nGrammar of graphics\nBasic plots\nMapping aesthetics\nGeometries and faceting\nThemes and export\n\n\nUnderstand the grammar of graphics and its role in structuring visualizations.\nCreate histograms, bar charts, boxplots, and scatterplots.\nMap variables to color, shapes, to enhance interpretability.\nApply geometries and faceting techniques for comparative analysis.\nModify plot themes and export visualizations for reports and presentations.\n\n\n\nModule 4: Exploratory data analysis (EDA)\n\nRudiments of EDA\nCharts and tables\nMeasures of central tendency\nDispersion and distribution\nContingency tables and scatterplots\n\n\nDiscuss EDA as the first step in data analysis.\nSummarize and visualize data using tables and plots.\nCompute and interpret mean, median, mode, and quantiles.\nAnalyze variance, standard deviation, skewness, and kurtosis.\nExplore relationship between categorical variables and continuous variables.\n\n\n\n\nModule 5: Data analysis report with Quarto\n\nIntroduction to Quarto\nEmbedding R code\nFormatting outputs\nRendering reports\nExporting reports\n\n\nLearn to create dynamic, reproducible documents using Quarto and markdown syntax.\nIntegrate R code and inline calculations within narrative text\nFormat tables and plots for professional presentation.\nRender reports to multiple formats (HTML, PDF, Word)\nProduce transparent, replicable research outputs for academic and policy contexts.\n\n\n\nModule 6: Version control with Git and Github\n\nIntroductin to Git\nGit workflows\nGithub basics\nPractical application\n\n\nUnderstand the basics of version control and why it matters in programming and research.\nLearn to initialize repositories, commit changes, and manage branches.\nPush repositories to Github, collaborate with peers, and manage issues.\nApply Git/Github to manage R projects and Quarto reports.\n\n\n\nModule 7: Creating a Quarto website\n\nIntroduction to Quarto websites\nWebsite setup\nEmbedding content\nPublishing\nCase study\n\n\nLearn the structure and purpose of Quarto websites for academic and project communication.\nCreate a basic Quarto website, configure navigation, and customize themes.\nAdd pages, plots, tables, and interactive elements.\nDeploy websites to Github Pages for public access.\nBuild a simple course or project website showcasing economic data analysis.",
+    "crumbs": [
+      "**Home**"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   },
   {
     "objectID": "module-1-exercise-1.html#part-a-setting-up-r-and-rstudio",
@@ -121,75 +204,36 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "module-2-data-management.html",
+    "href": "module-2-data-management.html",
+    "title": "Module 2: Data management and transformation with Tidyverse",
     "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Econ 106: Computer programming for economics",
-    "section": "",
-    "text": "Class schedule: Monday and Thursday | 13:00 - 14:00 Room Econ-135 Laboratory schedule: Wednesday | 10:00 - 13:00 Instructor: Christopher Llones e-mail: christopher.llones@vsu.edu.ph Pre-requisites: Math 13 Course credits: 3 units Number of hours: 2 hrs lectures and 3 hrs laboratory per week \n\n\nCourse description\nThis course introduces students to computer programming using R, with applications in economics. It covers the installation and use of R and RStudio, packages and help pages, R objects and notation, data management with Tidyverse, data visualization with ggplot2, exploratory data analysis, reproducible reporting with Quarto, version control with Git/GitHub, and Quarto website creation. By the end of the course, students will be able to design transparent, reproducible workflows for economic data analysis and communicate results effectively.\n\n\nCourse outcomes\n\nCO1: Demonstrate foundational proficiency in R programming.\nCO2: Apply data management and visualization techniques for economic analysis\nCO3: Conduct exploratory data analysis and produce reproducible reports.\nCO4: Utilize collaborative tools and digital publishing for reproducible workflows.\n\n\n\nCourse outline\n\n\n\n\n\n\n\n\nTopics\nLessons\nDescription\n\n\n\n\nModule 1: Introduction to R Programming\n\nInstalling R and RStudio\nPackages and help pages\nR objects\nR notation\n\n\nLearn to install and configure R and RStudio.\nUnderstand how to install, load, and manage R packages. Explore R’s built-in help system and documentation for functions and datasets.\nLearn about fundamental R objects including vectors, matrices, lists, and data frames. Understand how to create, manipulate, and inspect objects.\nDevelop proficiency in R’s notation, including indexing, subsetting, applying functions to objects.\n\n\n\nModule 2: Data management and transformation with Tidyverse\n\nIntroduction to Tidyverse\ndplyr basics\nData reshaping\nHandling missing data\nCase studies\n\n\nUnderstand the philosophy of Tidyverse and its role in data science workflows.\nLearn functions for filtering, selecting, mutating, summarizing, and arranging data.\nApply pivoting and joining techniques to restructure datasets.\nIdentify, manage, and impute missing values in datasets.\n\n\n\nModule 3: Data visualization with ggplot2\n\nGrammar of graphics\nBasic plots\nMapping aesthetics\nGeometries and faceting\nThemes and export\n\n\nUnderstand the grammar of graphics and its role in structuring visualizations.\nCreate histograms, bar charts, boxplots, and scatterplots.\nMap variables to color, shapes, to enhance interpretability.\nApply geometries and faceting techniques for comparative analysis.\nModify plot themes and export visualizations for reports and presentations.\n\n\n\nModule 4: Exploratory data analysis (EDA)\n\nRudiments of EDA\nCharts and tables\nMeasures of central tendency\nDispersion and distribution\nContingency tables and scatterplots\n\n\nDiscuss EDA as the first step in data analysis.\nSummarize and visualize data using tables and plots.\nCompute and interpret mean, median, mode, and quantiles.\nAnalyze variance, standard deviation, skewness, and kurtosis.\nExplore relationship between categorical variables and continuous variables.\n\n\n\n\nModule 5: Data analysis report with Quarto\n\nIntroduction to Quarto\nEmbedding R code\nFormatting outputs\nRendering reports\nExporting reports\n\n\nLearn to create dynamic, reproducible documents using Quarto and markdown syntax.\nIntegrate R code and inline calculations within narrative text\nFormat tables and plots for professional presentation.\nRender reports to multiple formats (HTML, PDF, Word)\nProduce transparent, replicable research outputs for academic and policy contexts.\n\n\n\nModule 6: Version control with Git and Github\n\nIntroductin to Git\nGit workflows\nGithub basics\nPractical application\n\n\nUnderstand the basics of version control and why it matters in programming and research.\nLearn to initialize repositories, commit changes, and manage branches.\nPush repositories to Github, collaborate with peers, and manage issues.\nApply Git/Github to manage R projects and Quarto reports.\n\n\n\nModule 7: Creating a Quarto website\n\nIntroduction to Quarto websites\nWebsite setup\nEmbedding content\nPublishing\nCase study\n\n\nLearn the structure and purpose of Quarto websites for academic and project communication.\nCreate a basic Quarto website, configure navigation, and customize themes.\nAdd pages, plots, tables, and interactive elements.\nDeploy websites to Github Pages for public access.\nBuild a simple course or project website showcasing economic data analysis.",
-    "crumbs": [
-      "**Home**"
-    ]
-  },
-  {
-    "objectID": "module-1-intro-r-programming.html",
-    "href": "module-1-intro-r-programming.html",
-    "title": "Module 1: Introduction to R programming",
-    "section": "",
-    "text": "Installing R and RStudio\nPackages and help pages\nR objects\nR notation\n\nView slides in new window\n\n\n\n\n\n\n\n\n\n\nTipPresentation keyboard shortcuts\n\n\n\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "text": "Introduction to Tidyverse\nData framea and tibble\nBasic data wrangling with dplyr\nData reshaping\nHandling missing data\nView slides in new window",
     "crumbs": [
       "**Topics**",
-      "Module 1: Introduction to R programming"
+      "Module 2: Data management and transformation with Tidyverse"
     ]
   },
   {
-    "objectID": "module-2-exercise-2.html",
-    "href": "module-2-exercise-2.html",
-    "title": "Econ 106",
+    "objectID": "module-2-data-management.html#class-exercise-demonstration",
+    "href": "module-2-data-management.html#class-exercise-demonstration",
+    "title": "Module 2: Data management and transformation with Tidyverse",
+    "section": "Class exercise demonstration",
+    "text": "Class exercise demonstration\n\nDownload the entire folder module-2-intro-r-data-management from the Google Drive link. For the meantime, keep the folder in your computer and wait for further instructions during the class.",
+    "crumbs": [
+      "**Topics**",
+      "Module 2: Data management and transformation with Tidyverse"
+    ]
+  },
+  {
+    "objectID": "module-3-dataviz-ggplot.html",
+    "href": "module-3-dataviz-ggplot.html",
+    "title": "Module 3: Data visualization with ggplot2",
     "section": "",
-    "text": "Course Title: Econ 106 Computer programming for economcis  Instructor: Christopher Llones  Exercise: Netflix Dataset Analysis in R  Due Date: 4 March 2026",
+    "text": "Understanding the grammar of graphics\nMapping and aesthetics\nGeometries and faceting\nThemese and export\n\nView slides in new window\n\n\n\n\n\n\n\n\n\n\nTipPresentation keyboard shortcuts\n\n\n\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
     "crumbs": [
-      "**Laboratory exercises**",
-      "Exercise 2: Data management and transformation with Tidyverse"
-    ]
-  },
-  {
-    "objectID": "module-2-exercise-2.html#objective",
-    "href": "module-2-exercise-2.html#objective",
-    "title": "Econ 106",
-    "section": "Objective",
-    "text": "Objective\nThis exercise will assess your ability to apply R programming skills specifically using the dplyr package and the pipe operator (%&gt;%) to explore and analyze a real-world dataset. You will work with the Netflix Movies & TV Shows dataset to answer questions using code.",
-    "crumbs": [
-      "**Laboratory exercises**",
-      "Exercise 2: Data management and transformation with Tidyverse"
-    ]
-  },
-  {
-    "objectID": "module-2-exercise-2.html#instructions",
-    "href": "module-2-exercise-2.html#instructions",
-    "title": "Econ 106",
-    "section": "Instructions",
-    "text": "Instructions\n\nUse R and the dplyr package to answer each question.\nSubmit your R script file (.R) with your code and outputs.\nUse the pipe operator (%&gt;%) for all data manipulations.\nYou may use additional packages like tidyr or stringr if needed.\nEnsure your code is clean, commented, and reproducible.\n\n\n\n\n\n\n\nTipDataset and files\n\n\n\n\nAccess the dataset and R script template from the econ106-exercise-2 folder.\nSubmit your completed R script file (.R) by the due date and upload using this link: Submission Link.\nYou may temporarily save your script here.",
-    "crumbs": [
-      "**Laboratory exercises**",
-      "Exercise 2: Data management and transformation with Tidyverse"
-    ]
-  },
-  {
-    "objectID": "module-2-exercise-2.html#questions",
-    "href": "module-2-exercise-2.html#questions",
-    "title": "Econ 106",
-    "section": "Questions",
-    "text": "Questions\nPart 1: Data exploration\n\nHow many rows and columns are in the dataset?\nList all unique types of content (e.g., Movie, TV Show).\nHow many titles were released in 2020?\n\nPart 2: filtering and summarising\n\nFilter the dataset to show only TV Shows released in India. How many are there?\nFind the top 5 most common ratings.\nWhich year had the most titles added to Netflix?\n\nPart 3: grouping and aggregation\n\nGroup the data by type and count how many entries each type has.\nGroup the data by release_year and summarize the number of titles released per year.\nWhich country has produced the most content on Netflix?\n\nAdvanced Filtering\n\nFilter the dataset to show all Movies with a duration longer than 100 minutes.\nFind all titles directed by ‘Steven Spielberg’.\nList all titles with the genre containing ‘Documentary’.",
-    "crumbs": [
-      "**Laboratory exercises**",
-      "Exercise 2: Data management and transformation with Tidyverse"
+      "**Topics**",
+      "Module 3: Data visualization with ggplot2"
     ]
   },
   {
