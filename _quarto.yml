@@ -42,7 +42,7 @@ website:
           - href: "module-2-exercise-2.qmd"
             text: "Exercise 2: Data management and transformation with Tidyverse"
           - href: "module-3-exercise-3.qmd"
-            text: "Exercise 23: Data viz with ggplot2"
+            text: "Exercise 3: Data viz with ggplot2"
 
       - section: "**Class records**"
         contents:

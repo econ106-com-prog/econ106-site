@@ -48,10 +48,10 @@
     "href": "module-3-exercise-3.html",
     "title": "Econ 106",
     "section": "",
-    "text": "Course Title: Econ 106 Computer programming for economcis  Instructor: Christopher Llones  Exercise:Replicating a World Bank figure using ggplot2  Due Date: 22 March 2026",
+    "text": "Course Title: Econ 106 Computer programming for economcis  Instructor: Christopher Llones  Exercise:Replicating a World Bank figure using ggplot2  Due Date: 23 April 2026  Submission link: Google form submission",
     "crumbs": [
       "**Laboratory exercises**",
-      "Exercise 23: Data viz with ggplot2"
+      "Exercise 3: Data viz with ggplot2"
     ]
   },
   {
@@ -62,7 +62,7 @@
     "text": "Objective\nBy the end of this exercise, students will be able to:\n\nImport and clean raw Excel data using readxl and janitor.\nTransform data from long to wide format with dplyr and tidyr.\nCreate a bubble scatter plot in ggplot2 with customized aesthetics.\nReplicate a figure from the World Bank’s Human Capital Report.\nInterpret the visualization in terms of economic development and human capital outcomes.",
     "crumbs": [
       "**Laboratory exercises**",
-      "Exercise 23: Data viz with ggplot2"
+      "Exercise 3: Data viz with ggplot2"
     ]
   },
   {
@@ -73,7 +73,7 @@
     "text": "Data management\n\nDownload the dataset: hlo_database.xlsx (from the World Bank Data Catalog).\nInstall (if needed) and load the following packages\n\n\nlibrary(tidyverse)\nlibrary(janitor)\nlibrary(readxl)\nlibrary(ggrepel)\n\n\nUse read_excel() to load the dataset from the World Bank’s Human Capital Report database. Select the correct sheet (in this case, sheet 3).\nApply clean_names() from the janitor package to standardize variable names (lowercase, snake_case).\nSelect and keep only the columns: country, year, hlo_m, and incomegroup. These are the needed variables for analysis.\nFilter the dataset to the years 2006 and 2015, since these are the comparison points for the visualization.\nGroup by incomegroup, country, and year. Compute the average of hlo_m using summarise(mean_hlo = mean(hlo_m)). This ensures each country-year has a single representative value.\nReshape the dataset to wide format. Use pivot_wider() with names_from = year and values_from = mean_hlo. This creates two columns: one for 2006 values and one for 2015 values.\nRemove incomplete cases by applying na.omit() to drop countries missing data for either year.\nRename the year columns to hlo_2006 and hlo_2015 for easier reference in plotting.\nThe final dataset should be similar with the dataset below.",
     "crumbs": [
       "**Laboratory exercises**",
-      "Exercise 23: Data viz with ggplot2"
+      "Exercise 3: Data viz with ggplot2"
     ]
   },
   {
@@ -84,7 +84,7 @@
     "text": "Creating Bubble Plot\n\n\n\n\n\n\n\n\n\n\n\nPrepare the income group variable\n\nConvert incomegroup into a factor and set the order of levels (High income, Upper middle income, Lower middle income).\nThis ensures the legend displays groups in a meaningful order.\n\nSet up the plot structure. Use ggplot() with the dataset hlo_dta.\n\nMap aesthetics:\n\nx = hlo_2006 (scores in 2006)\ny = hlo_2015 (scores in 2015)\nsize = hlo_2015 (bubble size reflects 2015 scores)\nfill = incomegroup (bubble fill color shows income group).\n\n\nAdd bubbles with outlines. Use geom_point(shape = 21, color = \"black\") to draw filled circles with a black outline.\nAdd a reference line. Use geom_abline(slope = 1, intercept = 0, linetype = \"dashed\"). This diagonal line shows where 2006 and 2015 scores would be equal. Countries above the line improved; those below declined.\nLabel countries. Use geom_text_repel(aes(label = country)) from the ggrepel package. This places country names near bubbles without overlapping.\nCustomize axes. Use scale_x_continuous() and scale_y_continuous() to set limits (250–650), tick marks every 50, and axis titles. This ensures a consistent scale for comparison.\nCustomize colors and sizes. Use scale_fill_manual() to assign custom colors for income groups. Use scale_size(range = c(1, 8), guide = \"none\") to control bubble size range and hide the size legend.\nAdjust the legend. Use guides(fill = guide_legend(override.aes = list(size = 6), reverse = TRUE)). This enlarges legend bubbles and reverses the order for clarity.\nAdd labels and themes. Use labs(fill = NULL) to remove the legend title. Apply theme_light() for a clean background. Adjust margins, axis text, and legend position with theme() for readability.",
     "crumbs": [
       "**Laboratory exercises**",
-      "Exercise 23: Data viz with ggplot2"
+      "Exercise 3: Data viz with ggplot2"
     ]
   },
   {
@@ -151,13 +151,6 @@
     "crumbs": [
       "**Home**"
     ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
   },
   {
     "objectID": "module-1-exercise-1.html#part-a-setting-up-r-and-rstudio",
