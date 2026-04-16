@@ -20,7 +20,7 @@ By the end of this exercise, students will be able to:
 
 ## Data management
 
-1. Download the dataset: [hlo_database.xlsx](https://humancapital.worldbank.org/en/building-human-capital-where-it-matters) (from the World Bank Data Catalog).
+1. Download the dataset: [hlo_database.xlsx](https://datacatalog.worldbank.org/search/dataset/0038001/harmonized-learning-outcomes-hlo-database) (from the World Bank Data Catalog). You may read the full report [here](https://www.worldbank.org/en/publication/human-capital-report).
 
 2. Install (if needed) and load the following packages
 
