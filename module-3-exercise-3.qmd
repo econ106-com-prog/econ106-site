@@ -6,7 +6,6 @@ title: ""
 
 **Course Title**: Econ 106 Computer programming for economcis <br> **Instructor**: Christopher Llones <br> **Exercise**:Replicating a World Bank figure using ggplot2 <br> **Due Date**: 23 April 2026 <br> **Submission link**: [Google form submission](https://forms.gle/jFCrVJmsu4VM91Yc9)
 
-
 ## Objective
 
 By the end of this exercise, students will be able to:
@@ -17,12 +16,11 @@ By the end of this exercise, students will be able to:
 - Replicate a figure from the World Bank’s Human Capital Report.
 - Interpret the visualization in terms of economic development and human capital outcomes.
 
-
 ## Data management
 
-1. Download the dataset: [hlo_database.xlsx](https://datacatalog.worldbank.org/search/dataset/0038001/harmonized-learning-outcomes-hlo-database) (from the World Bank Data Catalog). You may read the full report [here](https://www.worldbank.org/en/publication/human-capital-report).
+1.  Download the dataset: [hlo_database.xlsx](https://datacatalog.worldbank.org/search/dataset/0038001/harmonized-learning-outcomes-hlo-database) (from the World Bank Data Catalog). You may read the full report [here](https://www.worldbank.org/en/publication/human-capital-report).
 
-2. Install (if needed) and load the following packages
+2.  Install (if needed) and load the following packages
 
 ```{r}
 #| eval: false
@@ -32,24 +30,23 @@ library(readxl)
 library(ggrepel)
 ```
 
-3. Use `read_excel()` to load the dataset from the World Bank’s Human Capital Report database. Select the correct sheet (in this case, sheet 3).
+3.  Use `read_excel()` to load the dataset from the World Bank’s Human Capital Report database. Select the correct sheet (in this case, sheet 3).
 
-4. Apply clean_names() from the janitor package to standardize variable names (lowercase, snake_case).
+4.  Apply clean_names() from the janitor package to standardize variable names (lowercase, snake_case).
 
-5. Select and keep only the columns: `country`, `year`, `hlo_m`, and `incomegroup`. These are the needed variables for analysis.
+5.  Select and keep only the columns: `country`, `year`, `hlo_m`, and `incomegroup`. These are the needed variables for analysis.
 
-6. Filter the dataset to the years 2006 and 2015, since these are the comparison points for the visualization.
+6.  Filter the dataset to the years 2006 and 2015, since these are the comparison points for the visualization.
 
-7. Group by `incomegroup`, `country`, and `year`. Compute the average of `hlo_m` using `summarise(mean_hlo = mean(hlo_m))`. This ensures each country-year has a single representative value.
+7.  Group by `incomegroup`, `country`, and `year`. Compute the average of `hlo_m` using `summarise(mean_hlo = mean(hlo_m))`. This ensures each country-year has a single representative value.
 
-8. Reshape the dataset to wide format. Use `pivot_wider()` with `names_from = year` and `values_from = mean_hlo`. This creates two columns: one for 2006 values and one for 2015 values.
+8.  Reshape the dataset to wide format. Use `pivot_wider()` with `names_from = year` and `values_from = mean_hlo`. This creates two columns: one for 2006 values and one for 2015 values.
 
-9. Remove incomplete cases by applying `na.omit()` to drop countries missing data for either year.
+9.  Remove incomplete cases by applying `na.omit()` to drop countries missing data for either year.
 
 10. Rename the year columns to `hlo_2006` and `hlo_2015` for easier reference in plotting.
 
 11. The final dataset should be similar with the dataset below.
-
 
 ```{r}
 #| echo: false
@@ -88,7 +85,6 @@ DT::datatable(hlo_dta)
 
 ```
 
-
 ## Creating Bubble Plot
 
 ```{r}
@@ -99,31 +95,32 @@ knitr::include_graphics("plot/hlo_plot.jpg")
 
 <br>
 
-1. Prepare the income group variable
+1.  Prepare the income group variable
+
     - Convert incomegroup into a factor and set the order of levels (High income, Upper middle income, Lower middle income).
     - This ensures the legend displays groups in a meaningful order.
 
-2. Set up the plot structure. Use `ggplot()` with the dataset `hlo_dta`.
-    - Map aesthetics: 
-        - `x` = `hlo_2006` (scores in 2006)
-        - `y` = `hlo_2015` (scores in 2015)
-        - `size` = `hlo_2015` (bubble size reflects 2015 scores)
-        - `fill` = `incomegroup` (bubble fill color shows income group).
+2.  Set up the plot structure. Use `ggplot()` with the dataset `hlo_dta`.
 
-3. Add bubbles with outlines. Use `geom_point(shape = 21, color = "black")` to draw filled circles with a black outline.
+    - Map aesthetics:
+      - `x` = `hlo_2006` (scores in 2006)
+      - `y` = `hlo_2015` (scores in 2015)
+      - `size` = `hlo_2015` (bubble size reflects 2015 scores)
+      - `fill` = `incomegroup` (bubble fill color shows income group).
 
-4. Add a reference line. Use `geom_abline(slope = 1, intercept = 0, linetype = "dashed")`. This diagonal line shows where 2006 and 2015 scores would be equal. Countries above the line improved; those below declined.
+3.  Add bubbles with outlines. Use `geom_point(shape = 21, color = "black")` to draw filled circles with a black outline.
 
-5. Label countries. Use `geom_text_repel(aes(label = country))` from the ggrepel package. This places country names near bubbles without overlapping.
+4.  Add a reference line. Use `geom_abline(slope = 1, intercept = 0, linetype = "dashed")`. This diagonal line shows where 2006 and 2015 scores would be equal. Countries above the line improved; those below declined.
 
-6. Customize axes. Use `scale_x_continuous()` and `scale_y_continuous()` to set limits (250–650), tick marks every 50, and axis titles. This ensures a consistent scale for comparison.
+5.  Label countries. Use `geom_text_repel(aes(label = country))` from the ggrepel package. This places country names near bubbles without overlapping.
 
-7. Customize colors and sizes. Use `scale_fill_manual()` to assign custom colors for income groups. Use `scale_size(range = c(1, 8), guide = "none")` to control bubble size range and hide the size legend.
+6.  Customize axes. Use `scale_x_continuous()` and `scale_y_continuous()` to set limits (250–650), tick marks every 50, and axis titles. This ensures a consistent scale for comparison.
 
-8. Adjust the legend. Use `guides(fill = guide_legend(override.aes = list(size = 6), reverse = TRUE))`. This enlarges legend bubbles and reverses the order for clarity.
+7.  Customize colors and sizes. Use `scale_fill_manual()` to assign custom colors for income groups. Use `scale_size(range = c(1, 8), guide = "none")` to control bubble size range and hide the size legend.
 
-9. Add labels and themes. Use `labs(fill = NULL)` to remove the legend title. Apply `theme_light()` for a clean background. Adjust margins, axis text, and legend position with `theme()` for readability.
+8.  Adjust the legend. Use `guides(fill = guide_legend(override.aes = list(size = 6), reverse = TRUE))`. This enlarges legend bubbles and reverses the order for clarity.
 
+9.  Add labels and themes. Use `labs(fill = NULL)` to remove the legend title. Apply `theme_light()` for a clean background. Adjust margins, axis text, and legend position with `theme()` for readability.
 
 ```{r}
 #| echo: false

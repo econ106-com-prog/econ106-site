@@ -26,7 +26,7 @@ website:
             text: "Module 2: Data management and transformation with Tidyverse"
           - href: "module-3-dataviz-ggplot.qmd"
             text: "Module 3: Data visualization with ggplot2"
-          - href: ""
+          - href: "module-4-eda.qmd"
             text: "Module 4: Exploratory data analysis (EDA)"
           - href: ""
             text: "Module 5: Data analysis report with Quarto"
