@@ -28,7 +28,7 @@ website:
             text: "Module 3: Data visualization with ggplot2"
           - href: "module-4-eda.qmd"
             text: "Module 4: Exploratory data analysis (EDA)"
-          - href: ""
+          - href: "module-5-quarto.qmd"
             text: "Module 5: Data analysis report with Quarto"
           - href: ""
             text: "Module 6: Version control with Git and Github"
