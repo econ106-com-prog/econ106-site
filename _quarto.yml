@@ -43,6 +43,8 @@ website:
             text: "Exercise 2: Data management and transformation with Tidyverse"
           - href: "module-3-exercise-3.qmd"
             text: "Exercise 3: Data viz with ggplot2"
+          - href: "module-4-5-exercise.qmd"
+            text: "Exercise 4: Data analysis report with Quarto"
 
       - section: "**Class records**"
         contents:

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Module 3: Data visualization with ggplot2 – Econ 106</title>
+<title>module-4-5-exercise – Econ 106</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,8 +67,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./module-4-eda.html" rel="next">
-<link href="./module-2-data-management.html" rel="prev">
+<link href="./class-record.html" rel="next">
+<link href="./module-3-exercise-3.html" rel="prev">
 <link href="./plot/econ106-logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -251,7 +286,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./module-1-intro-r-programming.html"><strong>Topics</strong></a></li><li class="breadcrumb-item"><a href="./module-3-dataviz-ggplot.html">Module 3: Data visualization with ggplot2</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./module-1-exercise-1.html"><strong>Laboratory exercises</strong></a></li><li class="breadcrumb-item"><a href="./module-4-5-exercise.html">Exercise 4: Data analysis report with Quarto</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -309,7 +344,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module-3-dataviz-ggplot.html" class="sidebar-item-text sidebar-link active">
+  <a href="./module-3-dataviz-ggplot.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 3: Data visualization with ggplot2</span></a>
   </div>
 </li>
@@ -362,7 +397,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module-4-5-exercise.html" class="sidebar-item-text sidebar-link">
+  <a href="./module-4-5-exercise.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Exercise 4: Data analysis report with Quarto</span></a>
   </div>
 </li>
@@ -413,74 +448,104 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#set-up-quarto-document" id="toc-set-up-quarto-document" class="nav-link" data-scroll-target="#set-up-quarto-document">Set-up quarto document</a></li>
+  <li><a href="#answer-the-following-questions-with-code-chunks" id="toc-answer-the-following-questions-with-code-chunks" class="nav-link" data-scroll-target="#answer-the-following-questions-with-code-chunks">Answer the following questions with code chunks</a></li>
+  <li><a href="#additional-options-for-yaml" id="toc-additional-options-for-yaml" class="nav-link" data-scroll-target="#additional-options-for-yaml">Additional options for YAML</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./module-1-intro-r-programming.html"><strong>Topics</strong></a></li><li class="breadcrumb-item"><a href="./module-3-dataviz-ggplot.html">Module 3: Data visualization with ggplot2</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Module 3: Data visualization with ggplot2</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./module-1-exercise-1.html"><strong>Laboratory exercises</strong></a></li><li class="breadcrumb-item"><a href="./module-4-5-exercise.html">Exercise 4: Data analysis report with Quarto</a></li></ol></nav></header>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
+<p><img src="plot/quarto-header.png" class="img-fluid"></p>
+<p><strong>Course Title</strong>: Econ 106 Computer programming for economcis <br> <strong>Instructor</strong>: Christopher Llones <br> <strong>Exercise</strong>:Data analysis report with Quarto <br> <strong>Due Date</strong>: 20 May 2026 <br> <strong>Submission link</strong>: <a href="">Google form submission</a></p>
+<section id="objective" class="level2">
+<h2 class="anchored" data-anchor-id="objective">Objective</h2>
+<p>Practice using Quarto documents to combine text, R code, and outputs. You will analyze the Netflix Movies &amp; TV Shows dataset using dplyr and related tidyverse tools, while learning how to structure and render a .qmd file.</p>
+</section>
+<section id="set-up-quarto-document" class="level2">
+<h2 class="anchored" data-anchor-id="set-up-quarto-document">Set-up quarto document</h2>
 <ol type="1">
-<li>Understanding the grammar of graphics</li>
-<li>Mapping and aesthetics</li>
-<li>Geometries and faceting</li>
-<li>Themese and export</li>
+<li><p>Create a new Quarto document. Save it as netflix-exercise.qmd.</p></li>
+<li><p>Add YAML metadata</p></li>
 </ol>
-<p><a href="https://econ106-com-prog.github.io/econ106-lecture/module-3-data-viz" target="_blank" class="btn-slides">View slides in new window</a></p>
-<div class="box" style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
-<iframe width="100%" height="100%" src="https://econ106-com-prog.github.io/econ106-lecture/module-3-data-viz" frameborder="0" allowfullscreen="" style="position:absolute; top:0; left: 0">
-</iframe>
+<div class="cell" content="valuebox">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Econ 106 - Module 5 Exercise"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>author<span class="sc">:</span> <span class="st">"Your Name"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>date<span class="sc">:</span> <span class="st">"`r Sys.Date()`"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span> html</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<ol start="3" type="1">
+<li>Write an introduction</li>
+</ol>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Introduction</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>This exercise demonstrates how to use Quarto <span class="cf">for</span> combining narrative text, R code, and outputs.  </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>We will analyze the Netflix Movies <span class="sc">&amp;</span> TV Shows dataset using tidyverse functions.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Presentation keyboard shortcuts
+<ol start="4" type="1">
+<li>Load packages and dataset</li>
+</ol>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Load dataset (adjust path if needed)</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>netflix <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/netflix_titles.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+</section>
+<section id="answer-the-following-questions-with-code-chunks" class="level2">
+<h2 class="anchored" data-anchor-id="answer-the-following-questions-with-code-chunks">Answer the following questions with code chunks</h2>
+<ol type="1">
+<li><p>List all unique types of content (e.g., Movie, TV Show).</p></li>
+<li><p>Filter the dataset to show only TV Shows released in India. How many are there?</p></li>
+<li><p>What are the top 5 most common ratings.</p></li>
+<li><p>Which year had the most titles added to Netflix?</p></li>
+<li><p>Group the data by <code>type</code> and count how many entries each type has. Group the data by <code>release_year</code> and summarize the number of titles released per year. Which country has produced the most content on Netflix?</p></li>
+<li><p>From the available columns or variables in the dataset, create a data visualization and discuss.</p></li>
+</ol>
+</section>
+<section id="additional-options-for-yaml" class="level2">
+<h2 class="anchored" data-anchor-id="additional-options-for-yaml">Additional options for YAML</h2>
+<ol type="1">
+<li>Try the following YAML options to control the appearance or design of your quarto report. To learn more about the different ways how to design your quarto document, you may refer to this <a href="https://quarto.org/docs/output-formats/html-basics.html">quarto HTML basics</a>.</li>
+</ol>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Econ 106 - Module 5 Exercise"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>author<span class="sc">:</span> <span class="st">"Your Name"</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>date<span class="sc">:</span> last<span class="sc">-</span>modified</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span> </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    self<span class="sc">-</span>contained<span class="sc">:</span> true</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span> true</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">-</span>location<span class="sc">:</span> left</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">-</span>depth<span class="sc">:</span> <span class="dv">3</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    number<span class="sc">-</span>sections<span class="sc">:</span> true</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    code<span class="sc">-</span>fold<span class="sc">:</span> true</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    theme<span class="sc">:</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>      light<span class="sc">:</span> cosmo</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>      dark<span class="sc">:</span> darkly</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>editor<span class="sc">:</span> visual</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div class="callout-body-container callout-body">
-<div class="text-line-space">
-<ul>
-<li>
-Use <kbd>←</kbd> and <kbd>→</kbd> to navigate through the slides
-</li>
-<li>
-Use <kbd>F</kbd> to toggle full screen
-</li>
-<li>
-Use <kbd>O</kbd> to view an overview of all slides
-</li>
-<li>
-Use <kbd>?</kbd> to see a list of other shortcuts
-</li>
-</ul>
-</div>
-</div>
-</div>
-<p><br></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -898,13 +963,13 @@ Use <kbd>?</kbd> to see a list of other shortcuts
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./module-2-data-management.html" class="pagination-link" aria-label="Module 2: Data management and transformation with Tidyverse">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Module 2: Data management and transformation with Tidyverse</span>
+      <a href="./module-3-exercise-3.html" class="pagination-link" aria-label="Exercise 3: Data viz with ggplot2">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Exercise 3: Data viz with ggplot2</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./module-4-eda.html" class="pagination-link" aria-label="Module 4: Exploratory data analysis (EDA)">
-        <span class="nav-page-text">Module 4: Exploratory data analysis (EDA)</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./class-record.html" class="pagination-link" aria-label="Grades">
+        <span class="nav-page-text">Grades</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -52,7 +52,6 @@ library(ggrepel)
 #| echo: false
 #| message: false
 #| warning: false
-
 # libraries
 library(tidyverse)
 library(janitor)
@@ -61,28 +60,27 @@ library(ggrepel)
 
 # data management
 ## reading data
-hlo_dta <- 
-  read_excel("data/hlo_database.xlsx", 3) |> 
-  clean_names() |> 
-  select(country, year, hlo_m, incomegroup) |> 
-  filter(year %in% c(2006, 2015)) |> 
-  group_by(incomegroup, country, year) |> 
-  summarise(mean_hlo = mean(hlo_m)) |> 
+hlo_dta <-
+  read_excel("data/hlo_database.xlsx", 3) |>
+  clean_names() |>
+  select(country, year, hlo_m, incomegroup) |>
+  filter(year %in% c(2006, 2015)) |>
+  group_by(incomegroup, country, year) |>
+  summarise(mean_hlo = mean(hlo_m)) |>
   ungroup() |>
   pivot_wider(
     names_from = year,
     values_from = mean_hlo
   ) |>
-  na.omit() |> 
+  na.omit() |>
   rename(
     "hlo_2006" = `2006`,
     "hlo_2015" = `2015`
-  ) |> 
- mutate(across(is.numeric, ~ round(.x, 3)))
+  ) |>
+  mutate(across(is.numeric, ~ round(.x, 3)))
 
 ## display data
 DT::datatable(hlo_dta)
-
 ```
 
 ## Creating Bubble Plot
@@ -125,23 +123,42 @@ knitr::include_graphics("plot/hlo_plot.jpg")
 ```{r}
 #| echo: false
 #| eval: false
-
 ## plotting dataset
 p <- hlo_dta %>%
-  mutate(incomegroup = factor(incomegroup, levels = c("High income", "Upper middle income", "Lower middle income"))) |> 
+  mutate(
+    incomegroup = factor(
+      incomegroup,
+      levels = c("High income", "Upper middle income", "Lower middle income")
+    )
+  ) |>
   ggplot(aes(
     x = hlo_2006,
     y = hlo_2015,
-    size = hlo_2015,    
+    size = hlo_2015,
     fill = incomegroup
   )) +
   geom_point(shape = 21, color = "black") +
-  geom_abline(slope = 1, intercept = 0, linetype = "dashed") +  
-  geom_text_repel(aes(label = country), size = 5, color = "gray10", seed = 2026) +
-  scale_x_continuous(limits = c(250, 650), breaks = seq(250, 650, 50), expand = c(0, 0), name = "HLO test scores, 2006") +
-  scale_y_continuous(limits = c(250, 650), breaks = seq(250, 650, 50), expand = c(0, 0), name = "HLO test scores, 2015") +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed") +
+  geom_text_repel(
+    aes(label = country),
+    size = 5,
+    color = "gray10",
+    seed = 2026
+  ) +
+  scale_x_continuous(
+    limits = c(250, 650),
+    breaks = seq(250, 650, 50),
+    expand = c(0, 0),
+    name = "HLO test scores, 2006"
+  ) +
+  scale_y_continuous(
+    limits = c(250, 650),
+    breaks = seq(250, 650, 50),
+    expand = c(0, 0),
+    name = "HLO test scores, 2015"
+  ) +
   scale_fill_manual(values = c("#054746", "#259580", "#ef4447")) +
-  scale_size(range = c(1, 8), guide = "none") +  
+  scale_size(range = c(1, 8), guide = "none") +
   guides(fill = guide_legend(override.aes = list(size = 6), reverse = T)) +
 
   labs(
@@ -150,7 +167,7 @@ p <- hlo_dta %>%
   theme_light() +
   theme(
     plot.margin = margin(20, 20, 20, 20),
-    axis.title = element_text(size = 14, margin = margin(t=10, r=10)),
+    axis.title = element_text(size = 14, margin = margin(t = 10, r = 10)),
     axis.text = element_text(size = 10),
     legend.position = "bottom",
     legend.text = element_text(size = 14)
@@ -158,11 +175,11 @@ p <- hlo_dta %>%
 
 ## saving plot
 ggsave(
-    plot = p,
-    filename = "plot/hlo_plot.jpg",
-    width = 10,
-    height = 6,
-    unit = "in",
-    dpi = 300
+  plot = p,
+  filename = "plot/hlo_plot.jpg",
+  width = 10,
+  height = 6,
+  unit = "in",
+  dpi = 300
 )
 ```
