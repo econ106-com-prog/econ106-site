@@ -31,7 +31,7 @@ For this exam, you will be working with the Sleep Health and Lifestyle dataset. 
 1. Answer all 15 questions on the test paper provided by writing the final numeric or text result.
 2. For each question, write the R code you used in a separate file named exam_answers.R.
 3. Use tidyverse functions (`dplyr`: `summarise()`, `group_by()`, `filter()`, `mutate()`) for all answers.
-4. Once done, submit a copy of the R script file (exam_answers.R) you used to derive the answer using this [link]()
+4. Once done, submit a copy of the R script file (exam_answers.R) you used to derive the answer using this [link](https://forms.gle/HBM3cKSV8e3wraZp8)
 
 
 ## Exam preparation tips
