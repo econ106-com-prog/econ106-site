@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>module-2-exercise-2 – Econ 106</title>
+<title>term-02-final-project – Econ 106</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,8 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./module-3-exercise-3.html" rel="next">
-<link href="./module-1-exercise-1.html" rel="prev">
+<link href="./term-01-midterm-project.html" rel="prev">
 <link href="./plot/econ106-logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -251,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./module-1-exercise-1.html"><strong>Laboratory exercises</strong></a></li><li class="breadcrumb-item"><a href="./module-2-exercise-2.html">Exercise 2: Data management and transformation with Tidyverse</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./term-01-midterm-project.html">**Midterm &amp; Final projects**</a></li><li class="breadcrumb-item"><a href="./term-02-final-project.html">Final exam: Sleep Health and Lifestyle dataset</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -350,7 +349,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module-2-exercise-2.html" class="sidebar-item-text sidebar-link active">
+  <a href="./module-2-exercise-2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise 2: Data management and transformation with Tidyverse</span></a>
   </div>
 </li>
@@ -408,7 +407,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./term-02-final-project.html" class="sidebar-item-text sidebar-link">
+  <a href="./term-02-final-project.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Final exam: Sleep Health and Lifestyle dataset</span></a>
   </div>
 </li>
@@ -424,80 +423,191 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#sleep-health-and-lifestyle-dataset" id="toc-sleep-health-and-lifestyle-dataset" class="nav-link active" data-scroll-target="#sleep-health-and-lifestyle-dataset">Sleep health and lifestyle dataset</a></li>
   <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a></li>
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
+  <li><a href="#exam-preparation-tips" id="toc-exam-preparation-tips" class="nav-link" data-scroll-target="#exam-preparation-tips">Exam preparation tips</a>
+  <ul class="collapse">
+  <li><a href="#what-to-expect" id="toc-what-to-expect" class="nav-link" data-scroll-target="#what-to-expect">What to expect?</a></li>
+  <li><a href="#common-question-types" id="toc-common-question-types" class="nav-link" data-scroll-target="#common-question-types">Common Question Types</a></li>
+  <li><a href="#functions-to-review" id="toc-functions-to-review" class="nav-link" data-scroll-target="#functions-to-review">Functions to Review</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./module-1-exercise-1.html"><strong>Laboratory exercises</strong></a></li><li class="breadcrumb-item"><a href="./module-2-exercise-2.html">Exercise 2: Data management and transformation with Tidyverse</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./term-01-midterm-project.html">**Midterm &amp; Final projects**</a></li><li class="breadcrumb-item"><a href="./term-02-final-project.html">Final exam: Sleep Health and Lifestyle dataset</a></li></ol></nav></header>
 
 
 
 
 
-<p><img src="plot/econ06-exer2.png" class="img-fluid"></p>
-<p><strong>Course Title</strong>: Econ 106 Computer programming for economcis <br> <strong>Instructor</strong>: Christopher Llones <br> <strong>Exercise</strong>: Netflix Dataset Analysis in R <br> <strong>Due Date</strong>: 4 March 2026</p>
-<section id="objective" class="level2">
-<h2 class="anchored" data-anchor-id="objective">Objective</h2>
-<p>This exercise will assess your ability to apply R programming skills specifically using the <code>dplyr</code> package and the pipe operator (<code>%&gt;%</code>) to explore and analyze a real-world dataset. You will work with the Netflix Movies &amp; TV Shows dataset to answer questions using code.</p>
+<p><img src="plot/econ106-final-exam.png" class="img-fluid"></p>
+<section id="sleep-health-and-lifestyle-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="sleep-health-and-lifestyle-dataset">Sleep health and lifestyle dataset</h2>
+<p>For this exam, you will be working with the Sleep Health and Lifestyle dataset. This dataset contains information about individuals’ sleep habits, lifestyle factors, and health indicators. Download the dataset using this <a href="https://storage.googleapis.com/kagglesdsdata/datasets/3321433/6491929/Sleep_health_and_lifestyle_dataset.csv?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20260525%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260525T023608Z&amp;X-Goog-Expires=259200&amp;X-Goog-SignedHeaders=host&amp;X-Goog-Signature=af0d6b9f5b0ecabe7396a6b6845939ece6fb800634a90aea0579dc875428cfe6ae8bd8baf2dc7ab3e4a25a58dcfab88370f61297ae7b836d961b2bfacdba51bc65c81ed8b408fae182717c5b3bab7f9bb9e8c744a55a565cbfb8eeb256c479bf311d1032cbf071409895893cf2896f8e812495beaf679fdc95c938b6f444a0926aae1ce76b609e94663e9f4c7263a460cce9d611e3393931a39559c1211d621c1ba91b86ff840a36647abfa661648f6249c511151cb29147873d18135e6169aca8a06594652842dd1704e33c891c66ee081957056966028f0502dda5687304e36dd283d9244586141c723accea234f26a48bb1d5a5a159ce7218fa52ca0fcf6c">link</a>. Each row represents one person, with the following variables:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 72%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Person ID</strong></td>
+<td>Unique identifier for each individual</td>
+</tr>
+<tr class="even">
+<td><strong>Gender</strong></td>
+<td>Gender of the person (Male/Female)</td>
+</tr>
+<tr class="odd">
+<td><strong>Age</strong></td>
+<td>Age in years</td>
+</tr>
+<tr class="even">
+<td><strong>Occupation</strong></td>
+<td>Profession of the individual</td>
+</tr>
+<tr class="odd">
+<td><strong>Sleep Duration (hours)</strong></td>
+<td>Average daily sleep duration in hours</td>
+</tr>
+<tr class="even">
+<td><strong>Quality of Sleep (1–10)</strong></td>
+<td>Subjective rating of sleep quality (scale from 1 to 10)</td>
+</tr>
+<tr class="odd">
+<td><strong>Physical Activity Level</strong></td>
+<td>Daily minutes of physical activity</td>
+</tr>
+<tr class="even">
+<td><strong>Stress Level (1–10)</strong></td>
+<td>Subjective rating of stress level (scale from 1 to 10)</td>
+</tr>
+<tr class="odd">
+<td><strong>BMI Category</strong></td>
+<td>BMI classification (Underweight, Normal, Overweight, Obese)</td>
+</tr>
+<tr class="even">
+<td><strong>Blood Pressure</strong></td>
+<td>Blood pressure measurement (systolic/diastolic)</td>
+</tr>
+<tr class="odd">
+<td><strong>Heart Rate (bpm)</strong></td>
+<td>Resting heart rate in beats per minute</td>
+</tr>
+<tr class="even">
+<td><strong>Daily Steps</strong></td>
+<td>Number of steps taken per day</td>
+</tr>
+<tr class="odd">
+<td><strong>Sleep Disorder</strong></td>
+<td>Presence or absence of a sleep disorder (None, Insomnia, Sleep Apnea)</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="instructions" class="level2">
 <h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
-<ul>
-<li><p>Use R and the <code>dplyr</code> package to answer each question.</p></li>
-<li><p>Submit your <code>R script file (.R)</code> with your code and outputs.</p></li>
-<li><p>Use the pipe operator (<code>%&gt;%</code>) for all data manipulations.</p></li>
-<li><p>You may use additional packages like <code>tidyr</code> or <code>stringr</code> if needed.</p></li>
-<li><p>Ensure your code is clean, commented, and reproducible.</p></li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Dataset and files
-</div>
-</div>
-<div class="callout-body-container callout-body">
 <ol type="1">
-<li><p>Access the dataset and R script template from the <a href="https://drive.google.com/drive/folders/19Joe8EmuE7B_N4f_WdIpPgQx3tDwURrJ?usp=sharing">econ106-exercise-2</a> folder.</p></li>
-<li><p>Submit your completed R script file (.R) by the due date and upload using this link: <a href="https://forms.gle/g65QBPUk872cuuKU6">Submission Link</a>.</p></li>
-<li><p>You may temporarily save your script <a href="https://drive.google.com/drive/folders/1d2ZFfTiRbVCXSXSBzn7czIo4BYHjZzIl?usp=sharing">here</a>.</p></li>
+<li>Answer all 30 questions on the test paper provided by writing the final numeric or text result.</li>
+<li>For each question, write the R code you used in a separate file named exam_answers.R.</li>
+<li>Use tidyverse functions (<code>dplyr</code>: <code>summarise()</code>, <code>group_by()</code>, <code>filter()</code>, <code>mutate()</code>) for all answers.</li>
+<li>Once done, submit a copy of the R script file (exam_answers.R) you used to derive the answer using this <a href="">link</a></li>
 </ol>
-</div>
-</div>
 </section>
-<section id="questions" class="level2">
-<h2 class="anchored" data-anchor-id="questions">Questions</h2>
-<p><strong>Part 1: Data exploration</strong></p>
+<section id="exam-preparation-tips" class="level2">
+<h2 class="anchored" data-anchor-id="exam-preparation-tips">Exam preparation tips</h2>
+<section id="what-to-expect" class="level3">
+<h3 class="anchored" data-anchor-id="what-to-expect">What to expect?</h3>
 <ol type="1">
-<li><p>How many rows and columns are in the dataset?</p></li>
-<li><p>List all unique types of content (e.g., Movie, TV Show).</p></li>
-<li><p>How many titles were released in 2020?</p></li>
+<li>The exam will ask descriptive questions only (averages, medians, counts, proportions, group summaries).</li>
+<li>You will write the numeric/text answers on paper.</li>
+<li>You will also submit an R script (exam_answers.R) containing the code you used to derive those answers.</li>
+<li>All answers must use tidyverse functions (dplyr).</li>
 </ol>
-<p><strong>Part 2: filtering and summarising</strong></p>
-<ol start="4" type="1">
-<li><p>Filter the dataset to show only TV Shows released in India. How many are there?</p></li>
-<li><p>Find the top 5 most common ratings.</p></li>
-<li><p>Which year had the most titles added to Netflix?</p></li>
+</section>
+<section id="common-question-types" class="level3">
+<h3 class="anchored" data-anchor-id="common-question-types">Common Question Types</h3>
+<ol type="1">
+<li>Overall summaries
+<ul>
+<li>Average sleep duration across all individuals.</li>
+<li>Median sleep duration.</li>
+<li>Maximum/minimum values.</li>
+</ul></li>
+<li>Grouped summaries
+<ul>
+<li>Average sleep duration by occupation.</li>
+<li>Average quality of sleep by gender.</li>
+<li>Count of individuals by BMI category.</li>
+</ul></li>
+<li>Filtered summaries
+<ul>
+<li>Average heart rate of individuals with insomnia.</li>
+<li>Number of individuals with stress level &gt; 7.</li>
+</ul></li>
+<li>Derived variables
+<ul>
+<li>Average systolic blood pressure (extract from “Blood Pressure”).</li>
+<li>Average sleep duration by age group (Below 30, 30–40, Above 40).</li>
+<li>Average sleep duration by stress level category (Low, Medium, High).</li>
+</ul></li>
 </ol>
-<p><strong>Part 3: grouping and aggregation</strong></p>
-<ol start="7" type="1">
-<li><p>Group the data by <code>type</code> and count how many entries each type has.</p></li>
-<li><p>Group the data by <code>release_year</code> and summarize the number of titles released per year.</p></li>
-<li><p>Which country has produced the most content on Netflix?</p></li>
-</ol>
-<p><strong>Advanced Filtering</strong></p>
-<ol start="10" type="1">
-<li><p>Filter the dataset to show all Movies with a duration longer than 100 minutes.</p></li>
-<li><p>Find all titles directed by ‘Steven Spielberg’.</p></li>
-<li><p>List all titles with the genre containing ‘Documentary’.</p></li>
-</ol>
+</section>
+<section id="functions-to-review" class="level3">
+<h3 class="anchored" data-anchor-id="functions-to-review">Functions to Review</h3>
+<p>Make sure you are comfortable with these <strong>core functions</strong> in R (tidyverse/dplyr):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 65%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>summarise()</code></td>
+<td>Compute summary statistics (mean, median, max, min, count, proportion).</td>
+</tr>
+<tr class="even">
+<td><code>group_by()</code></td>
+<td>Group data by a variable (e.g., Occupation, Gender, BMI Category).</td>
+</tr>
+<tr class="odd">
+<td><code>filter()</code></td>
+<td>Select rows that meet a condition (e.g., Stress Level &gt; 7).</td>
+</tr>
+<tr class="even">
+<td><code>mutate()</code></td>
+<td>Create new variables (e.g., extract systolic/diastolic from Blood Pressure, create Age Groups).</td>
+</tr>
+<tr class="odd">
+<td><code>n()</code></td>
+<td>Count the number of rows in a group.</td>
+</tr>
+<tr class="even">
+<td><code>mean()</code>, <code>median()</code>, <code>max()</code>, <code>min()</code></td>
+<td>Basic descriptive statistics.</td>
+</tr>
+<tr class="odd">
+<td><code>case_when()</code></td>
+<td>Create categories (e.g., Stress Level → Low, Medium, High).</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -916,14 +1026,11 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./module-1-exercise-1.html" class="pagination-link" aria-label="Exercise 1: Introduction to R programming">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Exercise 1: Introduction to R programming</span>
+      <a href="./term-01-midterm-project.html" class="pagination-link" aria-label="Midterm project: Earthquake and tsunami analysis">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Midterm project: Earthquake and tsunami analysis</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./module-3-exercise-3.html" class="pagination-link" aria-label="Exercise 3: Data viz with ggplot2">
-        <span class="nav-page-text">Exercise 3: Data viz with ggplot2</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

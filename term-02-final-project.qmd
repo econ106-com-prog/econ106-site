@@ -1,0 +1,81 @@
+---
+title: ""
+---
+
+![](plot/econ106-final-exam.png)
+
+## Sleep health and lifestyle dataset
+
+For this exam, you will be working with the Sleep Health and Lifestyle dataset. This dataset contains information about individuals’ sleep habits, lifestyle factors, and health indicators. Download the dataset using this [link](https://storage.googleapis.com/kagglesdsdata/datasets/3321433/6491929/Sleep_health_and_lifestyle_dataset.csv?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20260525%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260525T023608Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=af0d6b9f5b0ecabe7396a6b6845939ece6fb800634a90aea0579dc875428cfe6ae8bd8baf2dc7ab3e4a25a58dcfab88370f61297ae7b836d961b2bfacdba51bc65c81ed8b408fae182717c5b3bab7f9bb9e8c744a55a565cbfb8eeb256c479bf311d1032cbf071409895893cf2896f8e812495beaf679fdc95c938b6f444a0926aae1ce76b609e94663e9f4c7263a460cce9d611e3393931a39559c1211d621c1ba91b86ff840a36647abfa661648f6249c511151cb29147873d18135e6169aca8a06594652842dd1704e33c891c66ee081957056966028f0502dda5687304e36dd283d9244586141c723accea234f26a48bb1d5a5a159ce7218fa52ca0fcf6c). Each row represents one person, with the following variables:
+
+
+| Variable Name              | Description                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------|
+| **Person ID**              | Unique identifier for each individual                                       |
+| **Gender**                 | Gender of the person (Male/Female)                                          |
+| **Age**                    | Age in years                                                               |
+| **Occupation**             | Profession of the individual                                                |
+| **Sleep Duration (hours)** | Average daily sleep duration in hours                                       |
+| **Quality of Sleep (1–10)**| Subjective rating of sleep quality (scale from 1 to 10)                     |
+| **Physical Activity Level**| Daily minutes of physical activity                                          |
+| **Stress Level (1–10)**    | Subjective rating of stress level (scale from 1 to 10)                      |
+| **BMI Category**           | BMI classification (Underweight, Normal, Overweight, Obese)                 |
+| **Blood Pressure**         | Blood pressure measurement (systolic/diastolic)                             |
+| **Heart Rate (bpm)**       | Resting heart rate in beats per minute                                      |
+| **Daily Steps**            | Number of steps taken per day                                               |
+| **Sleep Disorder**         | Presence or absence of a sleep disorder (None, Insomnia, Sleep Apnea)       |
+
+
+## Instructions
+
+1. Answer all 30 questions on the test paper provided by writing the final numeric or text result.
+2. For each question, write the R code you used in a separate file named exam_answers.R.
+3. Use tidyverse functions (`dplyr`: `summarise()`, `group_by()`, `filter()`, `mutate()`) for all answers.
+4. Once done, submit a copy of the R script file (exam_answers.R) you used to derive the answer using this [link]()
+
+
+## Exam preparation tips
+
+### What to expect?
+
+1. The exam will ask descriptive questions only (averages, medians, counts, proportions, group summaries).
+2. You will write the numeric/text answers on paper.
+3. You will also submit an R script (exam_answers.R) containing the code you used to derive those answers.
+4. All answers must use tidyverse functions (dplyr).
+
+
+### Common Question Types
+
+1. Overall summaries
+    - Average sleep duration across all individuals.
+    - Median sleep duration.
+    - Maximum/minimum values.
+
+2. Grouped summaries
+    - Average sleep duration by occupation.
+    - Average quality of sleep by gender.
+    - Count of individuals by BMI category.
+
+3. Filtered summaries
+    - Average heart rate of individuals with insomnia.
+    - Number of individuals with stress level > 7.
+
+4. Derived variables
+    - Average systolic blood pressure (extract from “Blood Pressure”).
+    - Average sleep duration by age group (Below 30, 30–40, Above 40).
+    - Average sleep duration by stress level category (Low, Medium, High).
+
+
+### Functions to Review
+
+Make sure you are comfortable with these **core functions** in R (tidyverse/dplyr):
+
+| Function        | Purpose |
+|-----------------|---------|
+| `summarise()`   | Compute summary statistics (mean, median, max, min, count, proportion). |
+| `group_by()`    | Group data by a variable (e.g., Occupation, Gender, BMI Category). |
+| `filter()`      | Select rows that meet a condition (e.g., Stress Level > 7). |
+| `mutate()`      | Create new variables (e.g., extract systolic/diastolic from Blood Pressure, create Age Groups). |
+| `n()`           | Count the number of rows in a group. |
+| `mean()`, `median()`, `max()`, `min()` | Basic descriptive statistics. |
+| `case_when()`   | Create categories (e.g., Stress Level → Low, Medium, High). |
